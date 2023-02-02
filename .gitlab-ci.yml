@@ -1,0 +1,72 @@
+image: hub.ucloudadmin.com/umcloud-console-pre/umconsole-cli:latest
+
+variables:
+  IMAGE_NAME_TEST03: "hub-test.service.ucloud.cn/umcloud-console-pre/amcloud-product-docs"
+  ROOT_DIR: /data
+  KUN_IPV4: 'true'
+  KUN_NAMESPACE: $KUN_NAMESPACE_PROD
+
+stages:
+  - build
+  - deploy
+
+.test_03_var:
+  variables:
+    KUN_NAMESPACE: $KUN_NAMESPACE_TEST03
+    KUN_IMAGE_PUSH_SECRET_NAME: $KUN_IMAGE_PUSH_SECRET_NAME_X6
+
+# 部署预发环境
+.node-deploy-pre:
+  variables:
+    DEPLOY_ENV: $PRE_DEV_DOCS
+    STARK_ENV: 'pre'
+  image: hub.ucloudadmin.com/uaek/uaek-kaniko-executor:latest
+  extends: 
+    - .test_03_var
+  stage: deploy
+  script:
+    - echo >> /etc/hosts '2002:a40:b4:1::1 hub-test.service.ucloud.cn'
+    - IMAGE_TAG=latest
+    - ls -al
+    - echo $IMAGE_NAME_TEST03:$IMAGE_TAG $KUN_IMAGE_PUSH_SECRET_NAME_PROD
+    - /kaniko/executor -c $CI_PROJECT_DIR -f $CI_PROJECT_DIR/script/pre/Dockerfile -d $IMAGE_NAME_TEST03:$IMAGE_TAG
+  dependencies:
+    - node-build-pre
+  tags:
+    - uaek-x6
+
+# 构建预发环境
+node-build-pre:
+  stage: build
+  extends: 
+    - .test_03_var
+  script:
+    - echo >> /etc/hosts '10.76.22.187 registry.npm.pre.ucloudadmin.com'
+    - yarn install && yarn build:prod
+    - ls -al
+  cache:
+    key:
+      files:
+        - package-lock.json
+        - package.json
+      prefix: $CI_PROJECT_NAME-$CI_JOB_NAME
+    paths:
+      - node_modules/
+  tags:
+     - uaek-x6
+  only:
+    refs:
+      - feature/test03
+  artifacts:
+    paths: 
+      - build/
+
+# 部署预发环境
+pre-node-deploy:
+  extends: 
+    - .test_03_var
+    - .node-deploy-pre
+  stage: deploy
+  only:
+    refs:
+      - feature/test03
