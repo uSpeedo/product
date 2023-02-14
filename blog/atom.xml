@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.uspeedo.com/blog</id>
-    <title>海外站文档 Blog</title>
+    <title>uSpeedo Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.uspeedo.com/blog"/>
-    <subtitle>海外站文档 Blog</subtitle>
-    <icon>https://docs.uspeedo.com/img/favicon.ico</icon>
+    <subtitle>uSpeedo Blog</subtitle>
+    <icon>https://docs.uspeedo.com/img/logo.png</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>https://docs.uspeedo.com/blog/welcome</id>
