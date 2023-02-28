@@ -44,13 +44,13 @@ const config = {
           editUrl:
             'https://github.com/UMCloud-FE/product-docs/tree/main',
         },
-        blog: {
-          showReadingTime: true,
+        // blog: {
+          // showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/UMCloud-FE/product-docs/tree/main',
-        },
+          // editUrl:
+            // 'https://github.com/UMCloud-FE/product-docs/tree/main',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -72,12 +72,16 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            activeBasePath: 'docs/sms',
+            docId: 'sms/index',
             position: 'left',
             label: 'SMS',
           },
           { 
-            to: '/blog', 
+            type: 'doc',
+            activeBasePath: 'docs/sdk',
+            // to: '/blog', 
+            docId: 'sdk/index',
             label: 'SDK', 
             position: 'left'
           },
