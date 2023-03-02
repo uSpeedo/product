@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# SMS
+# SMS协议
 
 ## 一、准备
 
@@ -16,7 +16,7 @@ sidebar_position: 1
 
 进入[Dashboard](https://console.uspeedo.com)页面，如下
 
-![Key](../../static/img/sdk/key.png)
+![Key](/img/sdk/key.png)
 
 点击上图GENERATE按钮生成`AccessKeyId`和`AccessKeySecret`
 

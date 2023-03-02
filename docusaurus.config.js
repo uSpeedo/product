@@ -19,8 +19,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'umcloud-fe', // Usually your GitHub org/user name.
-  projectName: 'product-docs', // Usually your repo name.
+  organizationName: 'uSpeedo', // Usually your GitHub org/user name.
+  projectName: 'product', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -30,16 +30,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-CN'],
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-        calendar: 'gregory',
-        path: 'en',
-      }
-    },
+    locales: ['en', 'zh-CN']
   },
 
   presets: [
@@ -53,8 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/UMCloud-FE/product-docs/tree/main',
-            // 添加以下配置以启用 Giscus 评论
+            'https://github.com/uSpeedo/product/blob/main/docs',
         },
         blog: false,
         theme: {
@@ -83,15 +73,13 @@ const config = {
             label: 'SMS',
           },
           { 
-            // type: 'doc',
-            // activeBasePath: 'docs/sdk',
-            to: 'blog', 
-            // docId: 'sdk/index',
-            label: 'SDK', 
-            position: 'left'
+            type: 'docSidebar', 
+            sidebarId: 'sdk',
+            position: 'left',
+            label: 'SDK',
           },
           {
-            href: 'https://github.com/UMCloud-FE/product-docs',
+            href: 'https://github.com/uSpeedo/product',
             label: 'GitHub',
             position: 'right',
           },
@@ -150,6 +138,9 @@ const config = {
         darkTheme: 'dark',
       },
     }),
+  plugins: [
+   
+  ]
 };
 
 module.exports = config;

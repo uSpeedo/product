@@ -2,40 +2,20 @@
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-### Installation
+## 待支持
 
-```
-$ yarn
-```
+1、如何配置中英文
+2、调整配置目录结构
+3、修复自动部署域名解析失败
+4、增加SEO
+5、迁移仓库
+6、如何搭建项目，支持blog
+7、如何修改首页
+8、文档排序
 
-### Local Development
+https://kuizuo.cn/project
 
-```
-$ yarn start
-```
+博客评论系统：https://github.com/giscus/giscus-component
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+评论系统可以添加
+gittalk或@giscus/react
