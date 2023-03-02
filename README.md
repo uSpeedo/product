@@ -4,14 +4,13 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 
 ## 待支持
 
-1、如何配置中英文
-2、调整配置目录结构
-3、修复自动部署域名解析失败
-4、增加SEO
-5、迁移仓库
-6、如何搭建项目，支持blog
-7、如何修改首页
-8、文档排序
+- 1、调整配置目录结构
+- 2、调整文档排列顺序
+- 3、如何配置中英文
+- 4、修复自动部署域名解析失败
+- 4、增加SEO
+- 6、如何搭建项目，支持blog
+- 7、如何修改首页
 
 https://kuizuo.cn/project
 
