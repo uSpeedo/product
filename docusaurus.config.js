@@ -129,14 +129,14 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      giscus: {
-        repo: 'UMCloud-FE/product-docs',
-        repoId: 'R_kgDOI4z9eA',
-        category: 'Announcements',
-        categoryId: 'DIC_kwDOI4z9eM4CUlwM',
-        theme: 'light',
-        darkTheme: 'dark',
-      },
+      // giscus: {
+        // repo: 'UMCloud-FE/product-docs',
+        // repoId: 'R_kgDOI4z9eA',
+        // category: 'Announcements',
+        // categoryId: 'DIC_kwDOI4z9eM4CUlwM',
+        // theme: 'light',
+        // darkTheme: 'dark',
+      // },
     }),
   plugins: [
    
