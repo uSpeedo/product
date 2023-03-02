@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build website
-        run: yarn build
+        run: yarn build && echo 'docs.uspeedo.com' > ./CNAME
 
       - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
