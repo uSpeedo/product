@@ -23,7 +23,6 @@ const generateItem = (menu) => {
       items.push(`${menu}/${filename}`)
     }
   })
-  console.log("items", items)
   return items
 }
 

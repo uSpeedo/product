@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'uSpeedo',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Easy Focus Powered',
   favicon: 'img/logo.png',
 
   // Set the production url of your site here
@@ -29,8 +29,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans', 'en']
+    defaultLocale: 'en',
+    locales: ['en','zh-Hans']
   },
 
   presets: [
@@ -133,10 +133,7 @@ const config = {
         // theme: 'light',
         // darkTheme: 'dark',
       // },
-    }),
-  plugins: [
-   
-  ]
+    })
 };
 
 module.exports = config;
