@@ -15,6 +15,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  staticDirectories: ['static'],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -29,7 +30,16 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-CN'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      }
+    },
   },
 
   presets: [
@@ -38,19 +48,15 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          // routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/UMCloud-FE/product-docs/tree/main',
+            // 添加以下配置以启用 Giscus 评论
         },
-        // blog: {
-          // showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-            // 'https://github.com/UMCloud-FE/product-docs/tree/main',
-        // },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -71,17 +77,16 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            activeBasePath: 'docs/sms',
-            docId: 'sms/index',
+            type: 'docSidebar',
+            sidebarId: 'sms',
             position: 'left',
             label: 'SMS',
           },
           { 
-            type: 'doc',
-            activeBasePath: 'docs/sdk',
-            // to: '/blog', 
-            docId: 'sdk/index',
+            // type: 'doc',
+            // activeBasePath: 'docs/sdk',
+            to: 'blog', 
+            // docId: 'sdk/index',
             label: 'SDK', 
             position: 'left'
           },
@@ -90,6 +95,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          }
         ],
       },
       footer: {
@@ -131,6 +140,14 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      giscus: {
+        repo: 'UMCloud-FE/product-docs',
+        repoId: 'R_kgDOI4z9eA',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOI4z9eM4CUlwM',
+        theme: 'light',
+        darkTheme: 'dark',
       },
     }),
 };
