@@ -1,8 +1,9 @@
 ---
+sidebar_label: '生成API签名'
 sidebar_position: 1
 ---
 
-# 生成API签名文档
+# 生成API签名
 
 ## 一、准备
 

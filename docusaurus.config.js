@@ -78,6 +78,12 @@ const config = {
             position: 'left',
             label: 'SDK',
           },
+          { 
+            type: 'docSidebar', 
+            sidebarId: 'api',
+            position: 'left',
+            label: 'API',
+          },
           {
             href: 'https://github.com/uSpeedo/product',
             label: 'GitHub',
