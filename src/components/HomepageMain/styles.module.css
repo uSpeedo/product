@@ -10,5 +10,5 @@
   flex-direction: column;
   align-items: center;
   /* text-align: center; */
-  max-width: min(50rem,100%);
+  max-width: min(50rem,100%) !important;
 }

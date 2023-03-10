@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  max-width: min(60rem,100%);
+  max-width: min(60rem,100%) !important;
 }
 
 @media screen and (max-width: 996px) {
