@@ -7,9 +7,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'uSpeedo',
-  tagline: 'Easy Focus Powered',
-  favicon: 'img/logo.png',
-
+  tagline: 'Check out our API reference documentation and quickstarts. From using the SDK to sample apps for Web, iOS, and Android, you\'ll get what you need.',
+  favicon: 'img/favicon.ico',
   // Set the production url of your site here
   url: 'https://docs.uspeedo.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -129,6 +128,7 @@ const config = {
       },
       prism: {
         theme: lightCodeTheme,
+        // theme: require('prism-react-renderer/themes/dracula'),
         darkTheme: darkCodeTheme,
       },
       giscus: {
