@@ -85,11 +85,11 @@ export default function Main() {
     <main className={styles.main}>
       <div className={`container ${styles.container}`}>
         <h1>{'Quickly send SMS'}</h1>
-        <p>
+        <p className={`container ${styles.text}`}>
           {'Check out the documentation, sample code, and developer tools you need to build exactly what you want, quickly. We\'ll handle the complexities of mobile operators and global regulations. Let\'s start building.'}
         </p>
 
-        <Tabs>
+        <Tabs className={`container ${styles.tabs}`}>
           {tabs.map((item, index) => {
             return (
               <TabItem value={index} key={index} label={item.title} default>
