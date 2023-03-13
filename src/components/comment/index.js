@@ -2,6 +2,7 @@ import React, { forwardRef, useEffect, useState } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import Giscus from '@giscus/react';
 import { useThemeConfig, useColorMode } from '@docusaurus/theme-common';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 // interface CustomThemeConfig extends ThemeConfig {
   // giscus: GiscusProps & { darkTheme: string };
 // }
@@ -12,6 +13,7 @@ export const Comment = forwardRef((_props, ref) => {
   const { theme = 'light', darkTheme = 'dark_dimmed' } = giscus;
   const giscusTheme = colorMode === 'dark' ? darkTheme : theme;
   const [routeDidUpdate, setRouteDidUpdate] = useState(false);
+  const { i18n } = useDocusaurusContext();
 
   useEffect(() => {
     function eventHandler(e) {
@@ -40,7 +42,7 @@ export const Comment = forwardRef((_props, ref) => {
             reactionsEnabled="1"
             emitMetadata="0"
             inputPosition="bottom"
-            lang="en"
+            lang={i18n.currentLocale}
             loading="lazy"
             {...giscus}
             theme={giscusTheme}

@@ -7,10 +7,6 @@
     "message": "Getting Started",
     "description": "The label for category Getting Started in sidebar sms"
   },
-  "sidebar.sms.category.产品介绍": {
-    "message": "产品介绍",
-    "description": "The label for category 产品介绍 in sidebar sms"
-  },
   "sidebar.sdk.category.Getting Started": {
     "message": "Getting Started",
     "description": "The label for category Getting Started in sidebar sdk"
@@ -18,5 +14,9 @@
   "sidebar.api.category.API LIST": {
     "message": "API LIST",
     "description": "The label for category API LIST in sidebar api"
+  },
+  "sidebar.sms.category.legal": {
+    "message": "法律",
+    "description": "The label for category legal in sidebar sms"
   }
 }

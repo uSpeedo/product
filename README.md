@@ -55,6 +55,15 @@ gittalk或@giscus/react
 
 ## react代码中中英文配置
 
+【若配置请忽略】首次配置中英文
+
+```js
+// 英文
+yarn write-translations --locale en
+// 中文
+yarn write-translations --locale zh-Hans
+```
+
 英文key: `i18n/en`
 
 ```json
@@ -94,8 +103,6 @@ function Layout(){
 }
 ```
 
-修改docusaurus.config.js中英文
+修改header、navbar、footer目录中的中英文
 
-在`i18n/{en}/docusaurus-theme-classic/{footer|navbar.json}文件中修改配置`
-
-修改配置文件的中英文
+`i18n/{en}/docusaurus-theme-classic/{footer|navbar.json}文件中修改配置`
