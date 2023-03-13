@@ -51,3 +51,51 @@ https://kuizuo.cn/project
 
 评论系统可以添加
 gittalk或@giscus/react
+
+
+## react代码中中英文配置
+
+英文key: `i18n/en`
+
+```json
+{
+    "title": {
+        "message": "blog"
+    }
+}
+```
+中文kye: `i18n/zh-Hans`
+
+```json
+{
+    "title": {
+        "message": "博客"
+    }
+}
+```
+
+在React代码中使用
+
+```js
+import Translate from '@docusaurus/Translate';
+
+<Translate id="title"></Translate>
+```
+
+在React环境中获取语言环境
+
+```js
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
+function Layout(){
+    const { siteConfig, i18n } = useDocusaurusContext();
+    console.log("i18n", siteConfig, i18n.currentLocale)
+    return <div>当前语言环境{i18n.currentLocale}</div>
+}
+```
+
+修改docusaurus.config.js中英文
+
+在`i18n/{en}/docusaurus-theme-classic/{footer|navbar.json}文件中修改配置`
+
+修改配置文件的中英文

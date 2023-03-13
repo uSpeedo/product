@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "uSpeedo Docs",
+    "description": "The title in the navbar"
+  },
+  "item.label.SMS": {
+    "message": "SMS",
+    "description": "Navbar item with label SMS"
+  },
+  "item.label.SDK": {
+    "message": "SDK",
+    "description": "Navbar item with label SDK"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

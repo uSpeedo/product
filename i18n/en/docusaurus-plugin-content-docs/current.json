@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.sms.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar sms"
+  },
+  "sidebar.sms.category.产品介绍": {
+    "message": "产品介绍",
+    "description": "The label for category 产品介绍 in sidebar sms"
+  },
+  "sidebar.sdk.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar sdk"
+  },
+  "sidebar.api.category.API LIST": {
+    "message": "API LIST",
+    "description": "The label for category API LIST in sidebar api"
+  }
+}
