@@ -49,7 +49,7 @@ https://kuizuo.cn/project
 
 博客评论系统：https://github.com/giscus/giscus-component
 
-评论系统可以添加
+评论系统可以添加，如何配置中英文
 gittalk或@giscus/react
 
 
@@ -106,3 +106,11 @@ function Layout(){
 修改header、navbar、footer目录中的中英文
 
 `i18n/{en}/docusaurus-theme-classic/{footer|navbar.json}文件中修改配置`
+
+
+## 如何新增一个目录
+
+- 用代码直接生成，不需要配置
+- 流程文档
+
+## 如何编写页面

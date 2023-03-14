@@ -11,7 +11,7 @@ sidebar_position: 5
 |Parameter name| Type     |Description|Required|
 |---|---|---|---|
 |Action|string| 值为：QueryUSMSTemplate | **Yes**|
-|AccountId  | int  | 项目ID  | **Yes** |
+|AccountId  | int  | 项目ID：[获取AccountId](./index.md)  | **Yes** |
 |TemplateId| []string |模板ID|**Yes**|
 
 ## Response Elements
@@ -19,7 +19,7 @@ sidebar_position: 5
 |---|---|---|---|
 |RetCode|int|当RetCode不为0时，Message中显示具体错误描述，若RetCode为0，不返回Message|**Yes**|
 |Action|string|操作名称|**Yes**|
-|Message|string|当RetCode不为0时，Message中显示具体错误描述|No|
+|Message|string|当RetCode不为0时，Message中显示具体错误描述|**Yes**|
 |Data|object|短信模板明细信息，各字段说明详见OutTemplate|No|
 
 ## OutTemplate

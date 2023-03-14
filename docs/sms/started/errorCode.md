@@ -1,6 +1,6 @@
 ---
-sidebar_label: '错误码'
-sidebar_position: 1
+sidebar_label: 'Error Code'
+sidebar_position: 3
 ---
 # SDK调用错误码查询
 

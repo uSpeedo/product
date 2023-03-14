@@ -14,9 +14,28 @@ sidebar_position: 7
 |---|---|---|---|
 |Action| string | 值为：SendBatchUSMSMessage |**Yes**|
 |AccountId| int | 项目ID |**Yes**|
-|TaskContent| [] | 批量发送内容，发送内容json数组中，每个“模板”组合作为一个子项，每个子项内支持多个号码，示例：发送内容json数组：[{"TemplateId": "UTA20212831C85C", "SenderId": "UCloud", "Target": [{"TemplateParams": ["123456"], "Phone": "(852)55311111", "ExtendCode": "123", "UserId": "456"} ] } ]   。json数组中各参数的定义："TemplateId":模板ID，"SenderId"短信SenderId，"Target"具体到号码粒度的发送内容。"Target"中的具体字段有："TemplateParams"实际发送的模板参数（若使用的是无参数模板，该参数不能传值），"Phone"手机号码, "ExtendCode"短信扩展码, "UserId"自定义业务标识ID。其中必传参数为"TemplateId", "SenderId", "Target"（"Target"中必传参数为"Phone"）。 |**Yes**|
+|TaskContent| []TaskCountModal | 批量发送内容，发送内容json数组中，每个“模板”组合作为一个子项，每个子项内支持多个号码 |**Yes**|
 
 > 支持在一次请求中向多个不同的手机号码发送不同内容的短消息
+
+### TaskCountModal
+
+|Parameter name| Type | Description | Required |
+|---|---|---|---|
+|TemplateId| string | 模版ID | **Yes** |
+|Target| []TargetModal | 具体到号码粒度的发送内容 | **Yes**|
+|SenderId| string | 短信SenderId | **No** |
+
+
+### TargetModal
+
+|Parameter name| Type | Description | Required |
+|---|---|---|---|
+|Phone|string|手机号码|**Yes**|
+|TemplateParams| []string | 实际发送的模板参数（若使用的是无参数模板，该参数不能传值） | **No** |
+|SenderId| string | 短信SenderId | **No** |
+|ExtendCode|string|短信扩展码||**No**|
+|UserId|string|自定义业务标识||**No**|
 
 ## Response Elements
 |Parameter name|Type|Description|Required|
@@ -47,14 +66,15 @@ sidebar_position: 7
 |FailureDetails|string|发送失败原因。注：若模板/SenderId校验失败，该字段为空|No|
 
 ## Request Example
-```
+
+```bash
 curl -X POST https://api.uspeedo.com/api -H 'Content-Type: application/json' -d '{
    "Action": "SendBatchUSMSMessage",
    "AccountId": 1,
    "TaskContent": [
   {
     "TemplateId": "UTA20212831C85C",
-    "SenderId": "UCloud",
+    "SenderId": "uSpeedo",
     "Target": [
       {
         "TemplateParams": [
@@ -71,7 +91,8 @@ curl -X POST https://api.uspeedo.com/api -H 'Content-Type: application/json' -d 
 ```
 
 ## Response Example
-```
+
+```json
 {
     "FailContent": [
         {

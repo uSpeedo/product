@@ -11,10 +11,15 @@ sidebar_position: 8
 
 |Parameter name| Type |Description|Required|
 |---|---|---|---|
-| AccountId | int | 项目ID  请参考ListProjects接口   | **Yes** |
+|Action| string | 值为：GetUSMSSendReceipt |**Yes**|
+|AccountId | int | 项目ID：[获取AccountId](./index.md)  | **Yes** |
 |SessionNoSet| []string |发送短信时返回的SessionNo集合，单次调用集合数需控制在100个以内|**Yes**|
 
-> 短信提交发送后，可调用接口GetUSMSSendReceipt查询及获取短信发送的状态信息；若发送后未立即拿到回执状态，建议在发送后5至10分钟内在尝试代用获取，若超过12小时仍未拿到发送状态，可联系`support@uspeedo.com`技术支持协助
+- 短信提交发送后，可调用接口GetUSMSSendReceipt查询及获取短信发送的状态信息；
+
+- 若发送后未立即拿到回执状态，建议在发送后5至10分钟内在尝试代用获取;
+
+- 若超过12小时仍未拿到发送状态，可联系`support@uspeedo.com`技术支持协助
 
 ## Response Elements
 

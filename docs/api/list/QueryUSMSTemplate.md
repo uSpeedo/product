@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Query one or more SMS templates'
-sidebar_position: 1
+sidebar_position: 5
 ---
 
 > Call the QueryUSMSTemplate interface to query SMS templates.
@@ -9,8 +9,8 @@ sidebar_position: 1
 
 |Parameter name| Type     |Description|Required|
 |---|---|---|---|
-|Action|string| Value: QueryUSMSTemplate | Yes|
-|AccountId  | int  | Project ID  | Yes |
+|Action|string| Value: "QueryUSMSTemplate" | Yes|
+|AccountId  | int  | Project ID: [Get AccountId](./index.md)  | Yes |
 |TemplateId| []string | Template ID |Yes|
 
 ## Response Elements
@@ -19,7 +19,7 @@ sidebar_position: 1
 |---|---|---|---|
 |RetCode|int|When RetCode is not 0, the specific error description is displayed in Message. If RetCode is 0, Message is not returned. |Yes|
 |Action|string|Operation name|Yes|
-|Message|string|Return status code description. If the operation is successful, it is empty by default.|No|
+|Message|string|Return status code description. If the operation is successful, it is empty by default.|Yes|
 |Data|object|SMS template details information, see OutTemplate for detailed field descriptions.|No|
 
 ## OutTemplate
@@ -40,7 +40,11 @@ sidebar_position: 1
 ## Request Example
 
 ```bash
-curl -X POST https://api.uspeedo.com/api -H 'Content-Type: application/json' -d '{"Action": "QueryUSMSTemplate", "AccountId": "1", "TemplateId": ["UTA190715D9108C"]}'
+curl -X POST https://api.uspeedo.com/api -H 'Content-Type: application/json' -d '{
+    "Action": "QueryUSMSTemplate", 
+    "AccountId": "1", 
+    "TemplateId": ["UTA190715D9108C"]
+}'
 ```
 
 ## Response Example

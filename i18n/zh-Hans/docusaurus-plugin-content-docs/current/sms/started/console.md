@@ -1,4 +1,5 @@
 ---
+sidebar_label: 'Use the SMS console'
 sidebar_position: 2
 ---
 

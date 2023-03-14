@@ -29,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en','zh-Hans']
+    locales: ['en', 'zh-Hans']
   },
 
   presets: [
@@ -82,6 +82,12 @@ const config = {
             sidebarId: 'api',
             position: 'left',
             label: 'API',
+          },
+          { 
+            type: 'docSidebar', 
+            sidebarId: 'legal',
+            position: 'left',
+            label: 'Legal',
           },
           {
             href: 'https://github.com/uSpeedo/product',

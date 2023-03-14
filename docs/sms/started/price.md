@@ -1,6 +1,6 @@
 ---
-sidebar_label: '短信价格'
-sidebar_position: 2
+sidebar_label: 'SMS price'
+sidebar_position: 4
 ---
 # price
 

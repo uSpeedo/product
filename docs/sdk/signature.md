@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'API签名'
+sidebar_label: 'API Signature'
 sidebar_position: 1
 ---
 
