@@ -23,7 +23,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to="/docs/sdk/signature">
+            to="/docs/sdk/signature-1">
             Getting Started
           </Link>
         </div>
