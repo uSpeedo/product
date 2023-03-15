@@ -13,17 +13,23 @@
 const fs = require('fs')
 
 const generateItem = (menu) => {
-  const getCategory = []
   let dir = fs.readdirSync(`docs/${menu}`)
+  const fileList = []
   dir.forEach(dirname => {
     const isFile = fs.statSync(`docs/${menu}/${dirname}`).isFile()
     if(isFile){
-      let fileName = dirname.replace(/(\.md|\.mdx)$/i, '')
-      let menuFile = `${menu}/${fileName}`
-      getCategory.push(menuFile)
+      fileList.push(dirname)
     }
   })
-  return getCategory
+  return fileList.map(file => {
+    return file.replace(/(\.md|\.mdx)$/i, '')
+  }).sort((a, b) => {
+    const fileNameStrA = a.split("-")
+    const fileNumA = fileNameStrA[fileNameStrA.length-1] || 0
+    const fileNameStrB = b.split("-")
+    const fileNumB = fileNameStrB[fileNameStrB.length-1] || 0
+    return fileNumA - fileNumB
+  }).map(file => `${menu}/${file}`)
 }
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
@@ -31,6 +37,7 @@ const sidebars = {
   // But you can create a sidebar manually
   sms: [
     ...generateItem("sms"),
+    // "sms/Introduction-1",
     {
       type: 'category',
       label: 'Getting Started',

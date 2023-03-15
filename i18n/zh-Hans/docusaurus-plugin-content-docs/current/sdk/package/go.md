@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'SDK接入'
+sidebar_label: 'Golang'
 sidebar_position: 2
 ---
 

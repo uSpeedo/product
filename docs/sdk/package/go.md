@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ### 1) Obtain API key information
 
-Before calling the API, you need to obtain the key information to generate the `X-Signature` signature. You need to provide `AccessKeyId` and `AccessKeySecret`, which can be obtained from the console account. For detailed steps on how to obtain them, please refer to: [How to obtain AccessKeyId and AccessKeySecret](../signature.md).
+Before calling the API, you need to obtain the key information to generate the `X-Signature` signature. You need to provide `AccessKeyId` and `AccessKeySecret`, which can be obtained from the console account. For detailed steps on how to obtain them, please refer to: [How to obtain AccessKeyId and AccessKeySecret](../signature-2).
 
 ### 2) Apply for SMS template
 

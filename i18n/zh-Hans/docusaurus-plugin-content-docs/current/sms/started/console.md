@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Use the SMS console'
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # SMS协议

@@ -1,6 +1,6 @@
 ---
 sidebar_label: '生成API签名'
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 生成API签名
@@ -65,7 +65,7 @@ AccessKeySecret := ""
 被签名串的构造规则为: 被签名串 = 所有请求参数拼接(无需 HTTP 转义)。并在本签名串的结尾拼接 API 密钥的私钥（AccessKeySecret）。
 
 ```
-AccountId60000051ActionCreateUSMSTemplateInternationaltruePurpose1Templatethis is a test templateTemplateNametest template AccountId60000051ActionCreateUSMSTemplateInternationaltruePurpose1Templatethis is a test templateTemplateNametest templateYmZmYWJiZTItZmFlNC00MWMwLTk4MzUtOWM5NjZhZjhhODJm
+AccountId60000051ActionCreateUSMSTemplateInternationaltruePurpose1Templatethis is a test templateTemplateNametest template YmZmYWJiZTItZmFlNC00MWMwLTk4MzUtOWM5NjZhZjhhODJm
 ```
 
 TODO: 需要确认我们SDK的规则是否和ucloud统一，关于空格和自定义符号怎么说？
@@ -79,28 +79,3 @@ TODO: 需要确认我们SDK的规则是否和ucloud统一，关于空格和自�
 ## 三、生成签名值
 
 使用SHA1编码被签名参数串，生成请求签名
-
-## 四、SDK中内置处理签名处理算法
-
-```go
-package main
-
-import (
-	"fmt"
-
-	"github.com/uSpeedo/usms-sdk-go/um/auth"
-)
-
-func main() {
-	params := map[string]interface{} {
-		"Action": "CreateUSMSTemplate",
-		"AccountId": um.Int(600000),
-		"Purpose": um.Int(1),
-		"International": true,
-		"TemplateName": um.String("test template"),
-		"Template": um.String("this is a test template"),
-	}
-	r := auth.CalculateSignature(params, AccessKeySecret)
-	fmt.Print("r", r)
-}
-```
