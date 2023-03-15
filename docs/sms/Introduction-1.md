@@ -9,7 +9,7 @@ Short Message Service (SMS) is a messaging service that allows you to send messa
 
 ## Billing methods
 
-All customers can pay via credit card or bank transfers.See [Billing type](https://docs.uspeedo.com/docs/sms/Billing) for more detail.
+All customers can pay via credit card or bank transfers.See [Billing type](.Billing) for more detail.
 
 ## Quick start guides
 
