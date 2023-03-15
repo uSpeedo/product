@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 一、准备工作
 
-- 1、获取签名：用来调用接口鉴权使用，[获取签名](../sdk/signature.md)
+- 1、获取签名：用来调用接口鉴权使用，[获取签名](../sdk/signature)
 - 2、AccountId: 服务账号，每个用户默认只有一个，需要开通更多需要联系运营support@uspeedo.com，[获取AccountId](https://console.uspeedo.com/sms/overview)，如下图
 
 ![AccountId](/img/sdk/accountId.png)
@@ -40,10 +40,10 @@ sidebar_position: 1
 ## 五、API列表
 
 - 短信模版
-  - [申请短信模版](/docs/api/CreateUSMSTemplate.md)
-  - [删除短信模版](/docs/api/DeleteUSMSTemplate.md)
-  - [修改短信模版](/docs/api/UpdateUSMSTemplate.md)
-  - [查询短信模版](/docs/api/QueryUSMSTemplate.md)
+  - [申请短信模版](./list/CreateUSMSTemplate)
+  - [删除短信模版](./list/DeleteUSMSTemplate)
+  - [修改短信模版](./list/UpdateUSMSTemplate)
+  - [查询短信模版](./list/QueryUSMSTemplate)
 - 发送短信
-  - [批量发送短信](/docs/api/SendBatchUSMSMessage.md)
-  - [获取短信发送状态](/docs/api/GetUSMSSendReceipt.md)
+  - [批量发送短信](./list/SendBatchUSMSMessage)
+  - [获取短信发送状态](./list/GetUSMSSendReceipt)

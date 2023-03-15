@@ -12,7 +12,7 @@ sidebar_position: 8
 |Parameter name| Type |Description|Required|
 |---|---|---|---|
 |Action| string | 值为：GetUSMSSendReceipt |**Yes**|
-|AccountId | int | 项目ID：[获取AccountId](/docs/api/list/index.md)  | **Yes** |
+|AccountId | int | 项目ID：[获取AccountId](../index)  | **Yes** |
 |SessionNoSet| []string |发送短信时返回的SessionNo集合，单次调用集合数需控制在100个以内|**Yes**|
 
 - 短信提交发送后，可调用接口GetUSMSSendReceipt查询及获取短信发送的状态信息；

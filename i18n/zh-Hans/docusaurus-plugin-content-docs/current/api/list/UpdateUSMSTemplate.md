@@ -11,7 +11,7 @@ sidebar_position: 4
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 | Action | string | 值为： UpdateUSMSTemplate  | **Yes**      |
-| AccountId   | int   | 项目ID：[获取AccountId](/docs/api/list/index.md)     | **Yes** |
+| AccountId   | int   | 项目ID：[获取AccountId](../index)     | **Yes** |
 |TemplateId|string|短信模板ID|**Yes**|
 |Template|string|新的模板内容。模板名称和模板内容必须提供一个，否则会报错。小于等于600个字|**Yes**|
 |TemplateName|string|新的模板名称。小于等于32个字，每个中文、英文、数组、符合都计为一个字|No|

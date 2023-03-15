@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 # GO SDK
 
-## I. Preparation
+## 1. Preparation
 
 ### 1) Obtain API key information
 
@@ -14,9 +14,9 @@ Before calling the API, you need to obtain the key information to generate the `
 
 [How to apply for an SMS template](https://console.uspeedo.com/sms/template)
 
-## 二、配置SDK
+## 2. SDK
 
-### 1) 使用 go get 安装
+### 1) Install using go get.
 
 ```go
 go get github.com/uSpeedo/usms-sdk-go
@@ -27,15 +27,16 @@ Note: If you encounter unstable network, you can use a proxy server to speed up 
 export GOPROXY=https://goproxy.io
 ```
 
-### 2) 使用 go mod 安装
+### 2) Install using go mod
 
-在任意代码中添加
+Importing SDK
 
 ```go
 import _ "github.com/uSpeedo/usms-sdk-go"
 
 ```
-之后在项目根目录执行：
+
+Afterwards, execute it in the project root directory:
 
 ```go
 go mod init
@@ -82,44 +83,21 @@ Use SHA1 to encode the string to be signed and generate the request signature.
 575fd93b539c4eb9837c8de6651e92389456adfa
 ```
 
-## 4. Built-in Signature Processing Algorithm in SDK
-
-```go
-package main
-
-import (
-	"fmt"
-
-	"github.com/uSpeedo/usms-sdk-go/um/auth"
-)
-
-func main() {
-	params := map[string]interface{} {
-		"Action": "CreateUSMSTemplate",
-		"AccountId": um.Int(600000),
-		"Purpose": um.Int(1),
-		"International": true,
-		"TemplateName": um.String("test template"),
-		"Template": um.String("this is a test template"),
-	}
-	r := auth.CalculateSignature(params, AccessKeySecret)
-	fmt.Print("r", r)
-}
-```
-
 5) Set HTTP headers
 
 API requests require the signature information to be passed through HTTP headers, which must include the following four parameters
 
-X-Signature  签名值
+X-Signature Signature value.
 
-X-Timestamp  时间戳，五分钟以内
+X-Timestamp Timestamp, within five minutes.
 
-X-Nonce      随机字符串
+X-Nonce Random string.
 
-X-Access-Key-Id 控制台账户的AccessKeyId
+X-Access-Key-Id AccessKeyId of the console account.
 
-## 三、完整示例
+
+## 3. Example
+
 ```go
 package main
 

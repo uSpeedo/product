@@ -13,7 +13,7 @@ sidebar_position: 7
 |Parameter name| Type | Description |Required|
 |---|---|---|---|
 |Action| string | 值为：SendBatchUSMSMessage |**Yes**|
-|AccountId| int | 项目ID |**Yes**|
+|AccountId| int | 项目ID: [获取AccountId](../index) |**Yes**|
 |TaskContent| []TaskCountModal | 批量发送内容，发送内容json数组中，每个“模板”组合作为一个子项，每个子项内支持多个号码 |**Yes**|
 
 > 支持在一次请求中向多个不同的手机号码发送不同内容的短消息
