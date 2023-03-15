@@ -40,10 +40,10 @@ sidebar_position: 1
 ## 五、API列表
 
 - 短信模版
-  - [申请短信模版](./CreateUSMSTemplate.md)
-  - [删除短信模版](./DeleteUSMSTemplate.md)
-  - [修改短信模版](./UpdateUSMSTemplate.md)
-  - [查询短信模版](./QueryUSMSTemplate.md)
+  - [申请短信模版](/docs/api/CreateUSMSTemplate.md)
+  - [删除短信模版](/docs/api/DeleteUSMSTemplate.md)
+  - [修改短信模版](/docs/api/UpdateUSMSTemplate.md)
+  - [查询短信模版](/docs/api/QueryUSMSTemplate.md)
 - 发送短信
-  - [批量发送短信](./SendBatchUSMSMessage.md)
-  - [获取短信发送状态](./GetUSMSSendReceipt.md)
+  - [批量发送短信](/docs/api/SendBatchUSMSMessage.md)
+  - [获取短信发送状态](/docs/api/GetUSMSSendReceipt.md)

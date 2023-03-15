@@ -15,7 +15,7 @@ sidebar_position: 3
 |Parameter name| Type |Description|Required|
 |---|---|---|---|
 | Action | string | The value is: DeleteUSMSTemplate   | **Yes**  |
-| AccountId | int | Project ID：[Get AccountId](./index.md)  | **Yes** |
+| AccountId | int | Project ID：[Get AccountId](../index.md)  | **Yes** |
 |TemplateIds| []string |Template ID (i.e. the work order ID when applying for the SMS template), supports an array format.|**Yes**|
 
 ## Response Elements

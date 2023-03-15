@@ -9,8 +9,8 @@ sidebar_position: 7
 ## Request Parameters
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|Action|string|The value is: UpdateUSMSTemplate.|Yes|
-|AccountId|int|Project ID. Please refer to the  interface.|Yes|
+|Action|string| The value is: UpdateUSMSTemplate. |Yes|
+|AccountId|int| Project ID. [Get AccountId](../index.md) |Yes|
 |TemplateId|string|ID of the SMS template to be modified.|Yes|
 |Template|string|New template content. Either the template name or the template content must be provided, otherwise an error will occur. The length must be less than or equal to 600 characters.|Yes|
 |TemplateName|string|New template name. The length must be less than or equal to 32 characters, and each Chinese character, English letter, number, and symbol counts as one character.|No|

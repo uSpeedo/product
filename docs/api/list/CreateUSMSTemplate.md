@@ -10,7 +10,7 @@ sidebar_position: 2
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | Action | string | Value: CreateUSMSTemplate   | Yes      |
-| AccountId | int | Project ID, [Get AccountId](./index.md)   | Yes      |
+| AccountId | int | Project ID, [Get AccountId](../index.md)   | Yes      |
 | Purpose | int  | SMS template usage type: 1-verification code SMS template; 2-system notification SMS template; 3-member promotion SMS template; | Yes |
 | TemplateName   | string | SMS template name, no more than 32 characters, each Chinese character, symbol, English, number, etc. counts as 1 word. | Yes  |
 | Template       | string | SMS template content, as follows: The number of words does not exceed 500, and each Chinese character, symbol, English, array, etc. counts as one word; the variable format in the template is filled in as {N}, where N is an integer greater than 1. When there are multiple parameters, it is recommended to start sequentially from 1, such as {1}, {2}, etc.; SMS templates are prohibited from including only variables; | Yes  |

@@ -11,7 +11,7 @@ sidebar_position: 5
 |Parameter name| Type     |Description|Required|
 |---|---|---|---|
 |Action|string| 值为：QueryUSMSTemplate | **Yes**|
-|AccountId  | int  | 项目ID：[获取AccountId](./index.md)  | **Yes** |
+|AccountId  | int  | 项目ID：[获取AccountId](/docs/api/list/index.md)  | **Yes** |
 |TemplateId| []string |模板ID|**Yes**|
 
 ## Response Elements

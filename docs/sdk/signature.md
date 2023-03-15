@@ -3,54 +3,54 @@ sidebar_label: 'API Signature'
 sidebar_position: 1
 ---
 
-# 生成API签名文档
+# Generating API Signature
 
-## 一、准备
+## 1. Preparation
 
-> 在生成 API 请求中的签名（Signature） 时，需要提供 AccessKeyId 和 AccessKeySecret可从控制台账户中获取，具体获取方法如下：
+> When generating a signature for an API request, you need to provide the AccessKeyId and AccessKeySecret, which can be obtained from the console account. The specific method of obtaining them is as follows
 
-### 1、登录[uSpeedo系统](https://console.uspeedo.com)
+### 1). Log in to the [uSpeedo](https://console.uspeedo.com)
 
-如果没有账号要先[注册](https://console.uspeedo.com/signin)
+If you don't have an account, you need to [register](https://console.uspeedo.com/signin) first.
 
-### 2、获取密钥AccessKeyId和AccessKeySecret
+### 2). Obtain the AccessKeyId and AccessKeySecret
 
-进入[Dashboard](https://console.uspeedo.com)页面，如下
+Enter then [Dashboard](https://console.uspeedo.com) page，as shown below
 
 ![Key](/img/sdk/key.png)
 
-点击上图GENERATE按钮生成`AccessKeyId`和`AccessKeySecret`
+Click the GENERATE button in the above figure to generate the AccessKeyId and AccessKeySecret.
 
-这里假设获取的密钥为：
+Here, let's assume that the obtained keys are:
 
-```golang
+```js
 AccessKeyId := ""
 AccessKeySecret := ""
 ```
 
-### 3、获取要调用的接口，[API文档](http://baidu.com)
+### 3). Obtain the API to be called，[API documentation](https://docs.uspeedo.com)
 
-我们以[申请短信模版API](http://uspeedo.page.ucloudadmin.com/api-doc/USMS/%E6%8E%A7%E5%88%B6%E5%8F%B0API/CreateUSMSTemplate.html)为例子
+Let's take the [Apply SMS Template API](http://uspeedo.page.ucloudadmin.com/api-doc/USMS/%E6%8E%A7%E5%88%B6%E5%8F%B0API/CreateUSMSTemplate.html) as an example.
 
-```go
+```json
 {
     "Action": "CreateUSMSTemplate",
     "AccountId": 10000,
     "TemplateName": "this is a test template",
-    "Template": "test template"
+    "Template": "test template",
     "Purpose": 1,
 }
 ```
 
-## 二、构造签名
+## 2. Constructing the signature.
 
-生成签名方首先将所有参数和值放入一个map 中，并按照 key 值升序排列。然后将所有参数拼接起来，组成签名原文。最后使用 SHA1签名原文进行签名。若接口中需携带图片/视频等文件上传请求，文件流不参与签名，请自行将文件转换成文件流形式，且以文件流格式请求。
+The first step in generating a signature is to place all parameters and their values in a map and sort them in ascending order by key value. Then concatenate all parameters into a signature string. Finally, use SHA1 to sign the signature string. If the API requires a file upload request such as an image/video, the file stream is not included in the signature. You need to convert the file into a stream format and request it in that format.
 
-### 1、将请求参数按照名称进行升序排列
+### 1). Sort the request parameters in ascending order by name
 
-> 获取请求中的请求报文主体（request body）并按照第一个字符的键值 ASCII 码递增排序（字母升序排序），如果遇到相同字符则按照第二个字符的键值 ASCII 码递增排序，以此类推
+> Obtain the request body of the request and sort it in ascending order by ASCII code of the first character of each key (in alphabetical order). If there are identical characters, sort them by ASCII code of the second character of each key, and so on.
 
-```go
+```json
 {
     "AccountId": 10000,
     "Action": "CreateUSMSTemplate",
@@ -60,47 +60,20 @@ AccessKeySecret := ""
 }
 ```
 
-### 2、构造被签名参数串
+### 2). Constructing the signature parameter string.
 
-被签名串的构造规则为: 被签名串 = 所有请求参数拼接(无需 HTTP 转义)。并在本签名串的结尾拼接 API 密钥的私钥（AccessKeySecret）。
+The construction rule for the signature string is: The signature string is constructed by concatenating all request parameters (without HTTP escape). The private key of the API key is appended to the end of this signature string.（AccessKeySecret）。
 
 ```
-AccountId60000051ActionCreateUSMSTemplateInternationaltruePurpose1Templatethis is a test templateTemplateNametest template AccountId60000051ActionCreateUSMSTemplateInternationaltruePurpose1Templatethis is a test templateTemplateNametest templateYmZmYWJiZTItZmFlNC00MWMwLTk4MzUtOWM5NjZhZjhhODJm
+AccountId60000051ActionCreateUSMSTemplateInternationaltruePurpose1Templatethis is a test templateTemplateNametest templateYmZmYWJiZTItZmFlNC00MWMwLTk4MzUtOWM5NjZhZjhhODJm
 ```
 
-TODO: 需要确认我们SDK的规则是否和ucloud统一，关于空格和自定义符号怎么说？
+Note:
 
-注意：
+- For bool type, it should be encoded as true/false.
+- For floating-point type, if the decimal part is 0, only the integer part should be kept. For example, 42.0 should be kept as 42.
+- For floating-point type, scientific notation cannot be used.
 
-- 对于 bool 类型，应编码为 true/false
-- 对于浮点数类型，如果小数部分为 0，应仅保留整数部分，如 42.0 应保留 42
-- 对于浮点数类型，不能使用科学计数法
+## 3. Generating the Signature Value
 
-## 三、生成签名值
-
-使用SHA1编码被签名参数串，生成请求签名
-
-## 四、SDK中内置处理签名处理算法
-
-```go
-package main
-
-import (
-	"fmt"
-
-	"github.com/uSpeedo/usms-sdk-go/um/auth"
-)
-
-func main() {
-	params := map[string]interface{} {
-		"Action": "CreateUSMSTemplate",
-		"AccountId": um.Int(600000),
-		"Purpose": um.Int(1),
-		"International": true,
-		"TemplateName": um.String("test template"),
-		"Template": um.String("this is a test template"),
-	}
-	r := auth.CalculateSignature(params, AccessKeySecret)
-	fmt.Print("r", r)
-}
-```
+Use SHA1 to encode the signature parameter string and generate the request signature.

@@ -13,7 +13,7 @@ Call the SendBatchUSMSMessage API to send SMS messages in bulk.
 |Parameter name| Type | Description |Required|
 |---|---|---|---|
 |Action| string | The value is: SendBatchUSMSMessage |Yes|
-|AccountId| int | Project ID |Yes|
+|AccountId| int | Project ID [Get AccountId](../index.md) |Yes|
 |TaskContent| []TaskCountModal | Batch sending content. In the sending content JSON array, each "template" combination is a sub-item, and multiple numbers are supported in each sub-item. |Yes|
 
 > Support sending SMS messages with different contents to multiple different phone numbers in a single request.

@@ -2,18 +2,17 @@
 sidebar_label: 'Golang'
 sidebar_position: 2
 ---
-
 # GO SDK
 
-## 一、准备工作
+## I. Preparation
 
-### 1) 获取API秘钥信息
+### 1) Obtain API key information
 
-调用API前需要获取秘钥信息生成签名`X-Signature`需要提供 `AccessKeyId` 和 `AccessKeySecret`可从控制台账户中获取。[获取步骤详见：如何获取AccessKeyId、AccessKeySecret](http://example.com/).
+Before calling the API, you need to obtain the key information to generate the `X-Signature` signature. You need to provide `AccessKeyId` and `AccessKeySecret`, which can be obtained from the console account. For detailed steps on how to obtain them, please refer to: [How to obtain AccessKeyId and AccessKeySecret](../signature.md).
 
-### 2) 申请短信模板
+### 2) Apply for SMS template
 
-您可在短信服务-控制台的[国际短信/短信签名模块](http://example.com/).，自助申请短信模板；详细申请步骤详见：[如何申请短信模板](http://example.com/)
+[How to apply for an SMS template](https://console.uspeedo.com/sms/template)
 
 ## 二、配置SDK
 
@@ -22,7 +21,7 @@ sidebar_position: 2
 ```go
 go get github.com/uSpeedo/usms-sdk-go
 ```
-Note 如果遇到网络不稳定，可以使用代理服务器来加速下载，例如使用 GOPROXY 加速：
+Note: If you encounter unstable network, you can use a proxy server to speed up the download, such as using GOPROXY acceleration
 
 ```go
 export GOPROXY=https://goproxy.io
@@ -43,51 +42,74 @@ go mod init
 go mod tidy
 ```
 
-### 3) 参数说明
+### 3) Parameter description
+-  Phone number list (PhoneNumbers): supports international and domestic SMS, international SMS uses the format (86)13812345678, and the international telephone area code needs to be added in front of the phone number.
+- SMS template ID (TemplateId): For first-time use, you need to apply for a template in the UCloud console. After the template is approved, pass the template ID to this location. 
+- SMS template parameter list (TemplateParams): The variables that can be passed in the SMS template. If there are several variables in the template when applying, you need to pass in several. 
+- SMS signature (SigContent): For first-time use, you need to apply for a signature in the UCloud console. After the signature is approved, pass the signature to this location. When there is a default signature, this parameter can be left blank.
 
-- 手机号列表（PhoneNumbers）：支持国际及国内短信，国际短信使用 (86)13812345678 格式，需要在手机号码前面带上国际电话区号
-- 短信模板 ID（TemplateId）: 首次使用，需要在 UCloud 控制台申请模板，审核通过后，将模板 ID 传入到该处。
-- 短信模板参数列表（TemplateParams）：短信模板中可传入变量，申请的时候模板中有几个变量，则需要传入几个。
-- 短信签名（SigContent）：首次使用，需要在 UCloud 控制台申请签名，审核通过后，将签名传入该处。首次申请的签名为默认签名，有默认签名存在时，该参数可不填。
+### 4) Construct API signature
 
-### 4) 构造API签名
+> The signature generator first puts all parameters and values into a map and sorts them in ascending order by key value. Then concatenate all parameters to form the signature text. Finally, sign the signature text using SHA1. If the interface requires uploading requests such as pictures/videos, the file stream does not participate in the signature. Please convert the file to a file stream format and request it in file stream format.
 
-
->生成签名方首先将所有参数和值放入一个map 中，并按照 key 值升序排列。然后将所有参数拼接起来，组成签名原文。最后使用 SHA1签名原文进行签名。若接口中需携带图片/视频等文件上传请求，文件流不参与签名，请自行将文件转换成文件流形式，且以文件流格式请求。
-
-1) 从控制台账户中获取AccessKeySecret
+1) Obtain AccessKeySecret from console account
 
 ```json
 MjI3YmYyMjItNmM4Mi00ZGM5LWEwNDQtN2EzZjM0Yzk2OWE1
 ```
 
-2) 获取请求中的请求报文主体（request body）并按照第一个字符的键值 ASCII 码递增排序（字母升序排序），如果遇到相同字符则按照第二个字符的键值 ASCII 码递增排序，以此类推
+2) Get the request body of the request and sort it in ascending order of ASCII code of the first character of each key (ascending order of letters). If the same character is encountered, sort it in ascending order of ASCII code of the second character, and so on.
 
 ```json
 {
-"Action"     :  "SendBatchUSMSMessage",
-"Limit"      :  10,
-"Region"     :  "cn-bj2"
+    "Action"     :  "SendBatchUSMSMessage",
+    "Limit"      :  10,
+    "Region"     :  "cn-bj2"
 }
 ```
 
-3) 将排序后的参数与其对应值，组合成 参数参数值 的格式，并在本签名串的结尾拼接`AccessKeySecret`，此时生成的字符串为待签名字符串
+3) Combine the sorted parameters with their corresponding values in the format of "parameter=value", and concatenate "AccessKeySecret" at the end of this signature string. The resulting string is the string to be signed.
 
 ```
 ActionSendBatchUSMSMessageLimit10Regioncn-bj2MjI3YmYyMjItNmM4Mi00ZGM5LWEwNDQtN2EzZjM0Yzk2OWE1
 ```
 
-4) 计算签名值
+4) Calculate the signature value
 
-使用 SHA1 编码待签名字符串，生成请求签名
+Use SHA1 to encode the string to be signed and generate the request signature.
 
 ```
 575fd93b539c4eb9837c8de6651e92389456adfa
 ```
 
-5) 设置HTTP头
+## 4. Built-in Signature Processing Algorithm in SDK
 
-API请求要求通过HTTP Header来传递签名信息，必须包含以下四个参数
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/uSpeedo/usms-sdk-go/um/auth"
+)
+
+func main() {
+	params := map[string]interface{} {
+		"Action": "CreateUSMSTemplate",
+		"AccountId": um.Int(600000),
+		"Purpose": um.Int(1),
+		"International": true,
+		"TemplateName": um.String("test template"),
+		"Template": um.String("this is a test template"),
+	}
+	r := auth.CalculateSignature(params, AccessKeySecret)
+	fmt.Print("r", r)
+}
+```
+
+5) Set HTTP headers
+
+API requests require the signature information to be passed through HTTP headers, which must include the following four parameters
 
 X-Signature  签名值
 

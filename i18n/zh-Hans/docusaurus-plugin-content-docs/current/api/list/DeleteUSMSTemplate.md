@@ -15,7 +15,7 @@ sidebar_position: 3
 |Parameter name| Type |Description|Required|
 |---|---|---|---|
 | Action | string | 值为：DeleteUSMSTemplate   | **Yes**  |
-| AccountId | int | 项目ID：[获取AccountId](./index.md)  | Yes |
+| AccountId | int | 项目ID：[获取AccountId](/docs/api/list/index.md)  | Yes |
 |TemplateIds| []string |模板ID（也即短信模板申请时的工单ID），支持以数组的方式|**Yes**|
 
 ## Response Elements

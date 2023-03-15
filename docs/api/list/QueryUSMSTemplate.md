@@ -10,7 +10,7 @@ sidebar_position: 5
 |Parameter name| Type     |Description|Required|
 |---|---|---|---|
 |Action|string| Value: "QueryUSMSTemplate" | Yes|
-|AccountId  | int  | Project ID: [Get AccountId](./index.md)  | Yes |
+|AccountId  | int  | Project ID: [Get AccountId](../index.md)  | Yes |
 |TemplateId| []string | Template ID |Yes|
 
 ## Response Elements

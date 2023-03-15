@@ -11,7 +11,7 @@ Call the GetUSMSSendReceipt API to obtain the status information of SMS sending.
 |Parameter name| Type |Description|Required|
 |---|---|---|---|
 |Action| string | The value is: GetUSMSSendReceipt. |Yes|
-|AccountId | int | Project ID. Please refer to the  interface. | Yes |
+|AccountId | int | Project ID. [Get AccountId](../index.md) | Yes |
 |SessionNoSet| []string | The SessionNo set returned when the SMS is sent. The number of sets per call should be controlled within 100.|Yes|
 
 - After submitting and sending SMS, you can call the GetUSMSSendReceipt interface to query and obtain the status information of SMS sending.

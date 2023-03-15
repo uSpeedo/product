@@ -9,7 +9,7 @@ sidebar_position: 2
 | Parameter name | Type | Description | Required |
 | --- | --- | --- | --- |
 | Action | string | 值为：CreateUSMSTemplate   | **Yes**      |
-| AccountId | int | 项目ID：[获取AccountId](./index.md)   | **Yes**      |
+| AccountId | int | 项目ID：[获取AccountId](/docs/api/list/index.md)   | **Yes**      |
 | Purpose | int  | 短信模板用途类型：1-验证码类短信模板；2-系统通知类短信模板；3-会员推广类短信模板； | **Yes** |
 | TemplateName   | string | 短信模板名称，不超过32个字符，每个中文、符号、英文、数字等都计为1个字。 | **Yes**  |
 | Template       | string | 短信模板内容，说明如下：字数不超过500，每个中文、符号、英文、数组等都计为一个字；模板中的变量填写格式：{N}，其中N为大于1的整数，有多个参数时，建议N从1开始顺次，例如：{1}、{2}等；短信模板禁止仅包括变量的情况； | **Yes**  |
