@@ -9,7 +9,7 @@ Short Message Service (SMS) is a messaging service that allows you to send messa
 
 ## Billing methods
 
-All customers can pay via credit card or bank transfers.See [Billing type](./Billing) for more detail.
+All customers can pay via credit card or bank transfers.See [Billing type](./Billing-3) for more detail.
 
 ## Quick start guides
 
