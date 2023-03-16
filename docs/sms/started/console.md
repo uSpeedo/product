@@ -29,6 +29,6 @@ AccessKey pairs are security tokens used to access product resources by calling 
 
 ## Message Analytics
 
-You can select a period, or query the usage summary in a specific country or region. And you can see the SMS delivery trend chart in the lower part of the [Analytics](https://console.uspeedo.com/sms/analytics)
+You can select a period, or query the usage summary in a specific country or region. And you can see the SMS delivery trend chart in the lower part of the [Analytics](https://console.uspeedo.com/sms/analytics).
 
 ![image](https://user-images.githubusercontent.com/116861648/225559357-e672b2b1-293c-4f37-a9fd-cd01d69efd56.png).
