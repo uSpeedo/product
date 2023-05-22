@@ -72,7 +72,7 @@
 | Score | string | [质量分](./999-Enum.md#template_quality_score) |
 
 ## component Parameters
-见 [创建模板](./3-CreateTemplate.md)
+见 [模板组件](https://developers.facebook.com/docs/whatsapp/business-management-api/message-templates/components)
 
 
 ## Response Example
