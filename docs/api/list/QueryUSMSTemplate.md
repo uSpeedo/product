@@ -27,7 +27,7 @@ sidebar_position: 5
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
 |TemplateId|string|SMS template ID.|Yes|
-|Purpose|int|Template type, options: 1-verification and authentication template; 2-notification template; 3-promotion template.|Yes|
+|Purpose|int|Template type, options: 1-verification and authentication SMS template; 2-notification SMS template; 3-promotion SMS template.|Yes|
 |TemplateName|string|SMS template name.|Yes|
 |Template|string|SMS template content.|Yes|
 |Status|int|SMS template status; status description: 0-pending review, 1-under review, 2-approved, 3-failed review, 4-disabled.|Yes|
