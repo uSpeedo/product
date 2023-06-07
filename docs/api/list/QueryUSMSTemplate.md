@@ -9,25 +9,25 @@ sidebar_position: 5
 
 |Parameter name| Type     |Description|Required|
 |---|---|---|---|
-|Action|string| Value: "QueryUSMSTemplate" | Yes|
-|AccountId  | int  | Project ID: [Get AccountId](../index.md)  | Yes |
-|TemplateId| []string | Template ID |Yes|
+|Action|string| Value: "QueryUSMSTemplate". | Yes|
+|AccountId  | int  | Project ID: [Get AccountId](../index.md).  | Yes |
+|TemplateId| []string | Template ID. |Yes|
 
 ## Response Elements
 
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|RetCode|int|When RetCode is not 0, the specific error description is displayed in Message. If RetCode is 0, Message is not returned. |Yes|
-|Action|string|Operation name|Yes|
-|Message|string|Return status code description. If the operation is successful, it is empty by default.|Yes|
+|RetCode|int|When RetCode is not 0, the specific error description is displayed in Message. If RetCode is 0, Message will not be returned. |Yes|
+|Action|string|Operation name.|Yes|
+|Message|string|Return status code description. If the operation is successful, it will be returned as empty by default.|Yes|
 |Data|object|SMS template details information, see OutTemplate for detailed field descriptions.|No|
 
 ## OutTemplate
 
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|TemplateId|string|SMS template ID|Yes|
-|Purpose|int|Template type, options: 1-verification code template; 2-notification template; 3-member promotion template.|Yes|
+|TemplateId|string|SMS template ID.|Yes|
+|Purpose|int|Template type, options: 1-verification and authentication template; 2-notification template; 3-promotion template.|Yes|
 |TemplateName|string|SMS template name.|Yes|
 |Template|string|SMS template content.|Yes|
 |Status|int|SMS template status; status description: 0-pending review, 1-under review, 2-approved, 3-failed review, 4-disabled.|Yes|
