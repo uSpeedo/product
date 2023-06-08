@@ -1,15 +1,17 @@
-# GetAccountPhoneList-获取账号手机号列表
+# GetAccountPhoneList
+To get a list of all phone numbers associated with a WhatsApp Business account.  
 
 ## Request Parameters
 | Name      | Type   | Description         | Required |
 | --------- | ------ | ------------------- | -------- |
 | Action    | string | GetAccountPhoneList | YES      |
-| AccountId | int    | 账户ID（网关参数）  | YES      |
+| AccountId | int    | Account ID          | YES      |
 
 ## Request Example
 ```json
 {
-    "Action": "GetAccountPhoneList"
+    "Action": "GetAccountPhoneList",
+    "AccountId": 8899
 }
 ```
 
@@ -17,25 +19,25 @@
 | Name      | Type   | Description           |
 | --------- | ------ | --------------------- |
 | Action    | string | CreateAccountResponse |
-| RetCode   | int    | 0成功，非0失败        |
-| Message   | string | 消息                  |
-| RequestId | string | 请求ID                |
-| Data      | object | 返回数据              |
+| RetCode   | int    | 0 for success         |
+| Message   | string | Return message        |
+| RequestId | string | Request id            |
+| Data      | object | Return data           |
 
 ## Data Parameters
-| Name      | Type  | Description |
-| --------- | ----- | ----------- |
-| PhoneList | array | 手机号列表  |
+| Name      | Type  | Description       |
+| --------- | ----- | ----------------- |
+| PhoneList | array | Phones of account |
 
 ## PhoneList Parameters
-| Name           | Type   | Description                                     |
-| -------------- | ------ | ----------------------------------------------- |
-| Number         | string | 手机号                                          |
-| Country        | string | 国家                                            |
-| Status         | string | [状态](./999-Enum.md#phone_status)              |
-| QualityRating  | string | [质量评级](./999-Enum.md#phone_quality_rating)  |
-| DisplayName    | string | 显示名称                                        |
-| MessagingLimit | string | [消息限制](./999-Enum.md#phone_messaging_limit) |
+| Name           | Type   | Description                                           |
+| -------------- | ------ | ----------------------------------------------------- |
+| Number         | string | Phone number                                          |
+| Country        | string | Phone belong country                                  |
+| Status         | string | [Status](./999-Enum.md#phone_status)                  |
+| QualityRating  | string | [Quality](./999-Enum.md#phone_quality_rating)         |
+| DisplayName    | string | Display name                                          |
+| MessagingLimit | string | [MessagingLimit](./999-Enum.md#phone_messaging_limit) |
 
 ## Response Example
 ```json
@@ -44,7 +46,7 @@
     "Data": {
         "PhoneList": [
             {
-                "Number": "8613667151386",
+                "Number": "86136xxxx1386",
                 "Country": "CN",
                 "Status": "",
                 "QualityRating": "",
@@ -52,7 +54,7 @@
                 "MessagingLimit": ""
             },
             {
-                "Number": "8615000579987",
+                "Number": "86150xxxx9987",
                 "Country": "CN",
                 "Status": "CONNECTED",
                 "QualityRating": "GREEN",
