@@ -12,8 +12,8 @@ Call the SendBatchUSMSMessage API to send SMS messages in bulk.
 ## Request Parameters
 |Parameter name| Type | Description |Required|
 |---|---|---|---|
-|Action| string | The value is: SendBatchUSMSMessage |Yes|
-|AccountId| int | Project ID [Get AccountId](../index.md) |Yes|
+|Action| string | Value: SendBatchUSMSMessage. |Yes|
+|AccountId| int | Project ID [Get AccountId](../index.md). |Yes|
 |TaskContent| []TaskCountModal | Batch sending content. In the sending content JSON array, each "template" combination is a sub-item, and multiple numbers are supported in each sub-item. |Yes|
 
 > Support sending SMS messages with different contents to multiple different phone numbers in a single request.
@@ -22,48 +22,48 @@ Call the SendBatchUSMSMessage API to send SMS messages in bulk.
 
 |Parameter name| Type | Description | Required |
 |---|---|---|---|
-|TemplateId| string | Template ID | Yes |
-|Target| []TargetModal | Sending content specific to the number granularity | Yes|
-|SenderId| string | SMS SenderId | No |
+|TemplateId| string | Template ID. | Yes |
+|Target| []TargetModal | Sending content specific to the number granularity. | Yes|
+|SenderId| string | SMS SenderId. | No |
 
 
 ### TargetModal
 
 |Parameter name| Type | Description | Required |
 |---|---|---|---|
-|Phone|string|Phone number|Yes|
+|Phone|string|Phone number.|Yes|
 |TemplateParams| []string | The actual template parameters sent (if using a template without parameters, this parameter cannot be passed). | No |
-|SenderId| string | SMS SenderId | No |
-|ExtendCode|string|SMS extension code||No|
-|UserId|string|Custom business identifier||No|
+|SenderId| string | SMS SenderId. | No |
+|ExtendCode|string|SMS extension code.||No|
+|UserId|string|Custom business identifier.||No|
 
 ## Response Elements
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|RetCode|int|When RetCode is not 0, the specific error description is displayed in Message. If RetCode is 0, Message is not returned.|Yes|
-|Action|string|Operation name|Yes|
-|Message|string|Error description when an error occurs|Yes|
-|SessionNo|string|The unique ID of the submitted send task for this session, which can be used to query the list of SMS messages sent for this session. Note: This field is returned only when the number of successfully submitted SMS messages is greater than 0.|No|
-|ReqUuid|string|The UUID of this request|No|
-|SuccessCount|int|The number of successfully submitted SMS (not split)|No|
+|RetCode|int|When RetCode is not 0, the specific error description is displayed in Message. If RetCode is 0, Message will not be returned.|Yes|
+|Action|string|Operation name.|Yes|
+|Message|string|Error description when an error occurs.|Yes|
+|SessionNo|string|The unique ID of the send task submitted for this session, which can be used to query the list of SMS messages sent during this session. Note: This field is returned only when the number of successfully submitted SMS messages is greater than 0.|No|
+|ReqUuid|string|The UUID of this request.|No|
+|SuccessCount|int|The number of successfully submitted SMS (not split).|No|
 |FailContent|array|Details of unsent messages. This field is valid when the return code is non-zero and can be used to resend based on the data in this field.|No|
 
 ## BatchInfo
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|TemplateId|string|Template ID|Yes|
-|SenderId|string|SenderId|Yes|
-|Target|array|Specific number information|Yes|
+|TemplateId|string|Template ID.|Yes|
+|SenderId|string|SenderId.|Yes|
+|Target|array|Specific number information.|Yes|
 |FailureDetails|string|Details of unsent messages. Note: This field is valid when the template/SenderId check fails.|No|
 
 ## FailPhoneDetail
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|TemplateParams|array|Template parameters|Yes|
-|Phone|string|Mobile phone number|Yes|
-|ExtendCode|string|Extension number|No|
-|UserId|string|User-defined ID|No|
-|FailureDetails|string|Reason for sending failure. Note: This field is empty if the template/SenderId check fails.|No|
+|TemplateParams|array|Template parameters.|Yes|
+|Phone|string|Mobile phone number.|Yes|
+|ExtendCode|string|Extension number.|No|
+|UserId|string|User-defined ID.|No|
+|FailureDetails|string|Reason for sending failure. Note: This field will be empty if the template/SenderId check fails.|No|
 
 ## Request Example
 
