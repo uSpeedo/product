@@ -4,8 +4,8 @@ To get a list of all phone numbers associated with a WhatsApp Business account.
 ## Request Parameters
 | Name      | Type   | Description         | Required |
 | --------- | ------ | ------------------- | -------- |
-| Action    | string | GetAccountPhoneList | YES      |
-| AccountId | int    | Account ID          | YES      |
+| Action    | string | GetAccountPhoneList. | YES      |
+| AccountId | int    | Account ID.          | YES      |
 
 ## Request Example
 ```json
