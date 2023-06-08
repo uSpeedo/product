@@ -24,8 +24,8 @@ sidebar_position: 1
 
 |Parameter name| Type |Description|Required|
 |---|---|---|---|
-| Action | string | API name   | **Yes**  |
-| AccountId | int | Project ID：[Get AccountId](https://console.uspeedo.com/sms/overview)    | Yes |
+| Action | string | API name.   | **Yes**  |
+| AccountId | int | Project ID：[Get AccountId](https://console.uspeedo.com/sms/overview).    | Yes |
 
 ## Response Parameters
 
@@ -33,7 +33,7 @@ sidebar_position: 1
 
 |Parameter name|Type|Description|Required|
 |---|---|---|---|
-|RetCode|int|When RetCode is not 0, the specific error description is displayed in Message. If RetCode is 0, Message is not returned.|Yes|
+|RetCode|int|When RetCode is not 0, the specific error description is displayed in Message. If RetCode is 0, Message will not be returned.|Yes|
 |Action|string|Operation name.|Yes|
 |Message|string|When RetCode is not 0, the specific error description is displayed in Message.|Yes|
 
