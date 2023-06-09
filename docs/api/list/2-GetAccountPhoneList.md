@@ -46,16 +46,16 @@ To get a list of all phone numbers associated with a WhatsApp Business account.
     "Data": {
         "PhoneList": [
             {
-                "Number": "86136xxxx1386",
-                "Country": "CN",
+                "Number": "447864xxxx86",
+                "Country": "UK",
                 "Status": "",
                 "QualityRating": "",
                 "DisplayName": "",
                 "MessagingLimit": ""
             },
             {
-                "Number": "86150xxxx9987",
-                "Country": "CN",
+                "Number": "447743xxxx87",
+                "Country": "UK",
                 "Status": "CONNECTED",
                 "QualityRating": "GREEN",
                 "DisplayName": "UCloud Information Technology (HK) Limited",
