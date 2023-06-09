@@ -6,9 +6,9 @@
 
 | Parameter name | Type | Description       | Required |
 | -------------- | ---- | ----------------- | -------- |
-| AccountId      | Int  | Account Id        | Yes      |
-| StartTime      | Int  | Search start time | No       |
-| EndTime        | Int  | Search end time   | No       |
+| AccountId      | Int  | Account Id.        | Yes      |
+| StartTime      | Int  | Search start time. | No       |
+| EndTime        | Int  | Search end time.   | No       |
 
 ## **Request Example**
 
@@ -22,27 +22,27 @@
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse                                  |
-| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code) |
-| Message   | string | Message                                               |
-| RequestId | string | Request Id                                            |
-| Data      | object | Return data                                           |
+| Action    | string | GetMessageSummaryResponse.                                  |
+| RetCode   | int    | 0 for success.  [Error Codes](./999-Enum.md#error_code) |
+| Message   | string | Message.                                               |
+| RequestId | string | Request Id.                                            |
+| Data      | object | Return data.                                           |
 
 ## Data Parameters
 | Name      | Type    | Description         |
 | --------- | ------- | ------------------- |
-| List      | []IList |                     |
-| MsgNum    | int     | Message total count |
-| MsgAmount | int     | Message cost amount |
+| List      | []IList | Summary Data List.                    |
+| MsgNum    | int     | Message total count. |
+| MsgAmount | int     | Message cost amount. |
 
 **Response Elements IList**
 
 | Parameter name | Type   | Description       |
 | :------------- | :----- | :---------------- |
-| BusinessPhone  | String | Business phone    |
-| Country        | String | Country code      |
-| ConvNum        | Int    | Conversion count  |
-| ConvAmount     | Int    | Conversion amount |
+| BusinessPhone  | String | Business phone number.   |
+| Country        | String | Country code.      |
+| ConvNum        | Int    | Conversion count.  |
+| ConvAmount     | Int    | Conversion amount. |
 
 
 
