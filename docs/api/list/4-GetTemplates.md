@@ -4,13 +4,13 @@ To get a list of template associated with a business phone.
 ## Request Parameters
 | Name          | Type   | Description               | Required |
 | ------------- | ------ | ------------------------- | -------- |
-| Action        | string | GetTemplates              | YES      |
-| AccountId     | int    | Account Id                | YES      |
-| BusinessPhone | string | 业务手机号                | YES      |
-| Name          | string | Template name             | NO       |
-| Limit         | int    | Limit size of each search | NO       |
-| After         | string | Paging cursor             | NO       |
-| Before        | string | Paging cursor             | NO       |
+| Action        | string | Value: GetTemplates.              | YES      |
+| AccountId     | int    | Account Id.                | YES      |
+| BusinessPhone | string | Business phone number.                | YES      |
+| Name          | string | Template name.             | NO       |
+| Limit         | int    | Limit size of each search. | NO       |
+| After         | string | Pagination mark.             | NO       |
+| Before        | string | Pagination mark.             | NO       |
 
 
 ## Request Example
