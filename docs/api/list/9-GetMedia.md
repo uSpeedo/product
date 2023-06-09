@@ -3,10 +3,10 @@ To get a media file associated with a business phone.
 ## Request Parameters
 | Name          | Type   | Description    | Required |
 | ------------- | ------ | -------------- | -------- |
-| Action        | string | ActionName     | YES      |
-| AccountId     | int    | Account Id     | YES      |
-| MediaId       | string | Media file Id  | YES      |
-| BusinessPhone | string | Business Phone | YES      |
+| Action        | string | Value: ActionName.     | YES      |
+| AccountId     | int    | Account Id.     | YES      |
+| MediaId       | string | Media file Id.  | YES      |
+| BusinessPhone | string | Business phone number. | YES      |
 
 
 ## Request Example
@@ -22,18 +22,18 @@ To get a media file associated with a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse                                  |
-| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code) |
-| Message   | string | Message                                               |
-| RequestId | string | Request Id                                            |
-| Data      | object | Return data                                           |
+| Action    | string | GetTemplatesResponse.                                  |
+| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code). |
+| Message   | string | Message.                                               |
+| RequestId | string | Request Id.                                            |
+| Data      | object | Return data.                                           |
 
 ## Data Parameters
 | Name     | Type   | Description      |
 | -------- | ------ | ---------------- |
-| FileName | string | File name        |
-| MimeType | string | File type        |
-| URL      | string | File content url |
+| FileName | string | File name.        |
+| MimeType | string | File type.        |
+| URL      | string | File content url. |
 
 
 ## Response Example
