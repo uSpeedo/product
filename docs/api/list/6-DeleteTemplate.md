@@ -23,7 +23,7 @@ To delete a template associated with a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse.                                  |
+| Action    | string | DeleteTemplateResponse.                                  |
 | RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code). |
 | Message   | string | Message.                                               |
 | RequestId | string | Request Id.                                            |
