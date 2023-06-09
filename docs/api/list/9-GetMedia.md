@@ -22,7 +22,7 @@ To get a media file associated with a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse.                                  |
+| Action    | string | GetMediaResponse.                                  |
 | RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code). |
 | Message   | string | Message.                                               |
 | RequestId | string | Request Id.                                            |
