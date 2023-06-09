@@ -4,7 +4,7 @@ To delete a template associated with a business phone.
 ## Request Parameters
 | Name          | Type   | Description                                                           | Required |
 | ------------- | ------ | --------------------------------------------------------------------- | -------- |
-| Action        | string | Value: DeleteTemplate                                                        | YES      |
+| Action        | string | Value: DeleteTemplate.                                                        | YES      |
 | AccountId     | int    | Account Id.                                                            | YES      |
 | BusinessPhone | string | Phone number of template.                                              | YES      |
 | Name          | string | Template name (The multilingual template with the same name will be deleted.) | YES      |
