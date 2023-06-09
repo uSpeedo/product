@@ -92,7 +92,7 @@ Refer to [Components](https://developers.facebook.com/docs/whatsapp/business-man
                                 ]
                             ]
                         },
-                        "Text": "你好，你的验证码是{{1}}，请不要将信息告诉别人",
+                        "Text": "Hi, your verification code is {{1}}, Please do not share the information with others",
                         "Type": "BODY"
                     }
                 ],
@@ -121,13 +121,13 @@ Refer to [Components](https://developers.facebook.com/docs/whatsapp/business-man
                         "Type": "HEADER"
                     },
                     {
-                        "Text": "测试模板",
+                        "Text": "TEST TEMPLATE",
                         "Type": "BODY"
                     },
                     {
                         "Buttons": [
                             {
-                                "Text": "链接",
+                                "Text": "LINK",
                                 "Type": "URL",
                                 "URL": "http://uspeedo.com/"
                             }
