@@ -58,7 +58,7 @@ To get a list of all phone numbers associated with a WhatsApp Business account.
                 "Country": "CN",
                 "Status": "CONNECTED",
                 "QualityRating": "GREEN",
-                "DisplayName": "優刻得信息科技-香港有限公司",
+                "DisplayName": "UCloud Information Technology (HK) Limited",
                 "MessagingLimit": "TIER_250"
             }
         ]
