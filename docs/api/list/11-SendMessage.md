@@ -3,12 +3,12 @@ To send message through a business phone.
 ## Request Parameters
 | Name          | Type   | Description                                | Required |
 | ------------- | ------ | ------------------------------------------ | -------- |
-| Action        | string | ActionName                                 | YES      |
-| AccountId     | int    | Account Id                                 | YES      |
-| To            | string | Target phone number                        | YES      |
+| Action        | string | ActionName.                                 | YES      |
+| AccountId     | int    | Account Id.                                 | YES      |
+| To            | string | Target phone number.                        | YES      |
 | Type          | string | [Message Type](./999-Enum.md#message_type) | YES      |
-| Content       | string | Message Content (json in text)             | YES      |
-| BusinessPhone | string | Business Phone                             | YES      |
+| Content       | string | Message Content (json in text).             | YES      |
+| BusinessPhone | string | Business Phone number.                            | YES      |
 
 
 ## Request Example
@@ -26,16 +26,16 @@ To send message through a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse                                  |
+| Action    | string | SendMessageResponse.                                  |
 | RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code) |
-| Message   | string | Message                                               |
-| RequestId | string | Request Id                                            |
-| Data      | object | Return data                                           |
+| Message   | string | Message.                                               |
+| RequestId | string | Request Id.                                            |
+| Data      | object | Return data.                                           |
 
 ## Data Parameters
 | Name      | Type   | Description |
 | --------- | ------ | ----------- |
-| MessageId | string | Message Id  |
+| MessageId | string | Message Id.  |
 
 
 ## Response Example
