@@ -4,10 +4,10 @@ To delete a template associated with a business phone.
 ## Request Parameters
 | Name          | Type   | Description                                                           | Required |
 | ------------- | ------ | --------------------------------------------------------------------- | -------- |
-| Action        | string | DeleteTemplate                                                        | YES      |
-| AccountId     | int    | Account Id                                                            | YES      |
-| BusinessPhone | string | Phone number of template                                              | YES      |
-| Name          | string | Template name (all language templates with same name will be deleted) | YES      |
+| Action        | string | Value: DeleteTemplate                                                        | YES      |
+| AccountId     | int    | Account Id.                                                            | YES      |
+| BusinessPhone | string | Phone number of template.                                              | YES      |
+| Name          | string | Template name (The multilingual template with the same name will be deleted.) | YES      |
 
 
 ## Request Example
@@ -23,11 +23,11 @@ To delete a template associated with a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse                                  |
-| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code) |
-| Message   | string | Message                                               |
-| RequestId | string | Request Id                                            |
-| Data      | object | Return data                                           |
+| Action    | string | GetTemplatesResponse.                                  |
+| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code). |
+| Message   | string | Message.                                               |
+| RequestId | string | Request Id.                                            |
+| Data      | object | Return data.                                           |
 
 
 
