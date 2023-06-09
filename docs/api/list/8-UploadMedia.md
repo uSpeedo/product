@@ -3,7 +3,7 @@ To upload a media file associated with a business phone.
 ## Request Parameters
 | Name          | Type   | Description            | Required |
 | ------------- | ------ | ---------------------- | -------- |
-| Action        | string | Value: UploadMedia            | YES      |
+| Action        | string | Value: UploadMedia.            | YES      |
 | AccountId     | int    | Account Id.             | YES      |
 | File          | string | File content in base64. | YES      |
 | BusinessPhone | string | Business Phone Number.  | YES      |
@@ -21,8 +21,8 @@ To upload a media file associated with a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                             |
 | --------- | ------ | ------------------------------------------------------- |
-| Action    | string | GetTemplatesResponse.                                    |
-| RetCode   | int    | 0 for success   [Error Codes](./999-Enum.md#error_code). |
+| Action    | string | UploadMediaResponse.                                    |
+| RetCode   | int    | 0 for success.    [Error Codes](./999-Enum.md#error_code). |
 | Message   | string | Message.                                                 |
 | RequestId | string | Request Id.                                              |
 | Data      | object | Return data.                                             |
