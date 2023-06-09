@@ -27,7 +27,7 @@ To send message through a business phone.
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
 | Action    | string | SendMessageResponse.                                  |
-| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code) |
+| RetCode   | int    | 0 for success. [Error Codes](./999-Enum.md#error_code) |
 | Message   | string | Message.                                               |
 | RequestId | string | Request Id.                                            |
 | Data      | object | Return data.                                           |
