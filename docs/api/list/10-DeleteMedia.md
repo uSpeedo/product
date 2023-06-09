@@ -3,8 +3,8 @@ To delete a media file associated with a business phone.
 ## Request Parameters
 | Name      | Type   | Description | Required |
 | --------- | ------ | ----------- | -------- |
-| Action    | string | DeleteMedia | YES      |
-| AccountId | int    | Account Id  | YES      |
+| Action    | string | Value: DeleteMedia. | YES      |
+| AccountId | int    | Account Id.  | YES      |
 
 
 ## Request Example
@@ -20,11 +20,11 @@ To delete a media file associated with a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse                                  |
-| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code) |
-| Message   | string | Message                                               |
-| RequestId | string | Request Id                                            |
-| Data      | object | Return data                                           |
+| Action    | string | GetTemplatesResponse.                                  |
+| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code). |
+| Message   | string | Message.                                               |
+| RequestId | string | Request Id.                                            |
+| Data      | object | Return data.                                           |
 
 
 
