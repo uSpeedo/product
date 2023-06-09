@@ -26,13 +26,13 @@ To get a list of template associated with a business phone.
 ```
 
 ## Response Parameters
-| Name      | Type   | Description          |
-| --------- | ------ | -------------------- |
-| Action    | string | GetTemplatesResponse |
-| RetCode   | int    | 0 for success        |
-| Message   | string | Message              |
-| RequestId | string | Request Id           |
-| Data      | object | Return data          |
+| Name      | Type   | Description                                           |
+| --------- | ------ | ----------------------------------------------------- |
+| Action    | string | GetTemplatesResponse                                  |
+| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code) |
+| Message   | string | Message                                               |
+| RequestId | string | Request Id                                            |
+| Data      | object | Return data                                           |
 
 ## Data Parameters
 | Name   | Type       | Description   |
