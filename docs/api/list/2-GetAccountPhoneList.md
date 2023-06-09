@@ -4,8 +4,8 @@ To get a list of all phone numbers associated with a WhatsApp Business account.
 ## Request Parameters
 | Name      | Type   | Description         | Required |
 | --------- | ------ | ------------------- | -------- |
-| Action    | string | Value: GetAccountPhoneList. | YES      |
-| AccountId | int    | Project ID, Get AccountID.          | YES      |
+| Action    | string | GetAccountPhoneList | YES      |
+| AccountId | int    | Account ID          | YES      |
 
 ## Request Example
 ```json
@@ -16,13 +16,13 @@ To get a list of all phone numbers associated with a WhatsApp Business account.
 ```
 
 ## Response Parameters
-| Name      | Type   | Description           |
-| --------- | ------ | --------------------- |
-| Action    | string | CreateAccountResponse. |
-| RetCode   | int    | 0 for success.         |
-| Message   | string | Return message.        |
-| RequestId | string | Request id.            |
-| Data      | object | Return data.           |
+| Name      | Type   | Description                                           |
+| --------- | ------ | ----------------------------------------------------- |
+| Action    | string | CreateAccountResponse                                 |
+| RetCode   | int    | 0 for success.[Error Codes](./999-Enum.md#error_code) |
+| Message   | string | Return message                                        |
+| RequestId | string | Request id                                            |
+| Data      | object | Return data                                           |
 
 ## Data Parameters
 | Name      | Type  | Description       |
@@ -32,12 +32,12 @@ To get a list of all phone numbers associated with a WhatsApp Business account.
 ## PhoneList Parameters
 | Name           | Type   | Description                                           |
 | -------------- | ------ | ----------------------------------------------------- |
-| Number         | string | Phone number.                                          |
-| Country        | string | Phone belong country.                                  |
-| Status         | string | [Status](./999-Enum.md#phone_status).                  |
-| QualityRating  | string | [Quality](./999-Enum.md#phone_quality_rating).         |
-| DisplayName    | string | Display name.                                          |
-| MessagingLimit | string | [MessagingLimit](./999-Enum.md#phone_messaging_limit). |
+| Number         | string | Phone number                                          |
+| Country        | string | Phone belong country                                  |
+| Status         | string | [Status](./999-Enum.md#phone_status)                  |
+| QualityRating  | string | [Quality](./999-Enum.md#phone_quality_rating)         |
+| DisplayName    | string | Display name                                          |
+| MessagingLimit | string | [MessagingLimit](./999-Enum.md#phone_messaging_limit) |
 
 ## Response Example
 ```json
