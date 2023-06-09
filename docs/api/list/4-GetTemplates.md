@@ -6,7 +6,7 @@ To get a list of template associated with a business phone.
 | ------------- | ------ | ------------------------- | -------- |
 | Action        | string | Value: GetTemplates.              | YES      |
 | AccountId     | int    | Account Id.                | YES      |
-| BusinessPhone | string | Business phone number.                | YES      |
+| BusinessPhone | string | Phone number of template.                | YES      |
 | Name          | string | Template name.             | NO       |
 | Limit         | int    | Limit size of each search. | NO       |
 | After         | string | Pagination mark.             | NO       |
