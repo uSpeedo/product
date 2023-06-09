@@ -19,7 +19,7 @@ To get a list of all phone numbers associated with a WhatsApp Business account.
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
 | Action    | string | GetAccountPhoneListResponse.                                 |
-| RetCode   | int    | 0 for success.[Error Codes](./999-Enum.md#error_code) |
+| RetCode   | int    | 0 for success. [Error Codes](./999-Enum.md#error_code) |
 | Message   | string | Return message.                                        |
 | RequestId | string | Request id.                                            |
 | Data      | object | Return data.                                           |
