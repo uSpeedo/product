@@ -20,8 +20,8 @@ To delete a media file associated with a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse.                                  |
-| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code). |
+| Action    | string | DeleteMediaResponse.                                  |
+| RetCode   | int    | 0 for success.  [Error Codes](./999-Enum.md#error_code). |
 | Message   | string | Message.                                               |
 | RequestId | string | Request Id.                                            |
 | Data      | object | Return data.                                           |
