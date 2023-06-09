@@ -28,43 +28,43 @@ To get a list of template associated with a business phone.
 ## Response Parameters
 | Name      | Type   | Description                                           |
 | --------- | ------ | ----------------------------------------------------- |
-| Action    | string | GetTemplatesResponse                                  |
-| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code) |
-| Message   | string | Message                                               |
-| RequestId | string | Request Id                                            |
-| Data      | object | Return data                                           |
+| Action    | string | GetTemplatesResponse.                                  |
+| RetCode   | int    | 0 for success [Error Codes](./999-Enum.md#error_code). |
+| Message   | string | Message.                                               |
+| RequestId | string | Request Id.                                            |
+| Data      | object | Return data.                                           |
 
 ## Data Parameters
 | Name   | Type       | Description   |
 | ------ | ---------- | ------------- |
-| Data   | []template | Template list |
-| Paging | object     | Paging info   |
+| Data   | []template | Template list. |
+| Paging | object     | Paging info.   |
 
 ## Paging Parameters
 | Name   | Type   | Description                                                   |
 | ------ | ------ | ------------------------------------------------------------- |
-| Cursor | object | Paging cursor                                                 |
-| Next   | string | Next page. If it is not empty, you can turn the page forwards |
-| Prev   | string | Pre page. If it is not empty, you can turn the page backwards |
+| Cursor | object | Pagination mark.                                                 |
+| Next   | string | Next page. If it is not empty, you can turn the page forwards. |
+| Prev   | string | Prev page. If it is not empty, you can turn the page backwards. |
 
 ## Cursor Parameters
 | Name   | Type   | Description              |
 | ------ | ------ | ------------------------ |
-| After  | string | Paging cursor(Next Page) |
-| Before | string | Paging cursor(Prev Page) |
+| After  | string | Paging cursor(Next Page). |
+| Before | string | Paging cursor(Prev Page). |
 
 ## template Parameters
 | Name           | Type        | Description                                 |
 | -------------- | ----------- | ------------------------------------------- |
-| ID             | string      | Template Id                                 |
-| Name           | string      | Template Name                               |
+| ID             | string      | Template Id.                                 |
+| Name           | string      | Template Name.                               |
 | Category       | string      | [Category](./999-Enum.md#template_category) |
-| Language       | string      | Template Language                           |
+| Language       | string      | Template Language.                           |
 | Status         | string      | [Status](./999-Enum.md#template_status)     |
-| RejectedReason | string      | Template RejectedReason                     |
-| QualityScore   | object      | Template QualityScore                       |
-| Tags           | []string    | Template Tags                               |
-| Components     | []component | Template Components                         |
+| RejectedReason | string      | Template Rejected Reason.                     |
+| QualityScore   | object      | Template Quality Score.                       |
+| Tags           | []string    | Template Tags.                               |
+| Components     | []component | Template Components.                         |
 
 ## QualityScore Parameters
 | Name  | Type   | Description                                           |
