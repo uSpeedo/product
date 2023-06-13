@@ -73,15 +73,15 @@ const config = {
           },
           { 
             type: 'docSidebar', 
-            sidebarId: 'sdk',
+            sidebarId: 'whatsapp',
             position: 'left',
-            label: 'SDK',
+            label: 'WhatsApp',
           },
           { 
             type: 'docSidebar', 
-            sidebarId: 'api',
+            sidebarId: 'email',
             position: 'left',
-            label: 'API',
+            label: 'Email',
           },
           { 
             type: 'docSidebar', 
