@@ -3,104 +3,32 @@ sidebar_label: 'Use the SMS console'
 sidebar_position: 2
 ---
 
-# SMS协议
+# Use the SMS console
 
-## 一、准备
+## Before you begin
 
-> 在生成 API 请求中的签名（Signature） 时，需要提供 AccessKeyId 和 AccessKeySecret可从控制台账户中获取，具体获取方法如下：
+1. Create a uSpeedo account and complete upgrade.
 
-### 1、登录[uSpeedo系统](https://console.uspeedo.com)
+To create an account and complete upgrade, visit the [registration page](https://console.uspeedo.com/signup) and [upgrade page](https://console.uspeedo.com/bill/upgrade). If you already have an account that had been upgraded, proceed to the next step.
 
-如果没有账号要先[注册](https://console.uspeedo.com/signin)
+2. Obtain an AccessKey pair.
 
-### 2、获取密钥AccessKeyId和AccessKeySecret
+AccessKey pairs are security tokens used to access product resources by calling API operations. You must create an AccessKey pair before you call SMS API operations. Go to [obtain an AccessKey pair](https://console.uspeedo.com/).
 
-进入[Dashboard](https://console.uspeedo.com)页面，如下
+## Send messages
 
-![Key](/img/sdk/key.png)
+1. Create a message template. [New template quikly](https://console.uspeedo.com/sms/new-template).
 
-点击上图GENERATE按钮生成`AccessKeyId`和`AccessKeySecret`
+2. Wait until the message template is approved.
 
-这里假设获取的密钥为：
+3. Create a messaging campaign. [Try to send messages](https://console.uspeedo.com/sms/message). You can send messages to multiple mobile phone numbers at a time.
 
-```golang
-AccessKeyId := ""
-AccessKeySecret := ""
-```
+## Query message details
 
-### 3、获取要调用的接口，[API文档](http://baidu.com)
+[Messaging campaign details](https://console.uspeedo.com/sms/message). Here, you can view the details of the messaging campaign, including the delivery time, delivery status, total number of mobile phone numbers to which the message is sent, and number of mobile phone numbers to which the message fails to be sent. On the [Message Search page](https://console.uspeedo.com/sms/search), you can view the details of sent messages by mobile phone number, delivery date, delivery status, or destination country or region.
 
-我们以[申请短信模版API](http://uspeedo.page.ucloudadmin.com/api-doc/USMS/%E6%8E%A7%E5%88%B6%E5%8F%B0API/CreateUSMSTemplate.html)为例子
+## Message Analytics
 
-```go
-{
-    "Action": "CreateUSMSTemplate",
-    "AccountId": 10000,
-    "TemplateName": "this is a test template",
-    "Template": "test template"
-    "Purpose": 1,
-}
-```
+You can select a period, or query the usage summary in a specific country or region. And you can see the SMS delivery trend chart in the lower part of the [Analytics](https://console.uspeedo.com/sms/analytics).
 
-## 二、构造签名
-
-生成签名方首先将所有参数和值放入一个map 中，并按照 key 值升序排列。然后将所有参数拼接起来，组成签名原文。最后使用 SHA1签名原文进行签名。若接口中需携带图片/视频等文件上传请求，文件流不参与签名，请自行将文件转换成文件流形式，且以文件流格式请求。
-
-### 1、将请求参数按照名称进行升序排列
-
-> 获取请求中的请求报文主体（request body）并按照第一个字符的键值 ASCII 码递增排序（字母升序排序），如果遇到相同字符则按照第二个字符的键值 ASCII 码递增排序，以此类推
-
-```go
-{
-    "AccountId": 10000,
-    "Action": "CreateUSMSTemplate",
-    "Purpose": 1,
-    "Template": "test template",
-    "TemplateName": "this is a test template",
-}
-```
-
-### 2、构造被签名参数串
-
-被签名串的构造规则为: 被签名串 = 所有请求参数拼接(无需 HTTP 转义)。并在本签名串的结尾拼接 API 密钥的私钥（AccessKeySecret）。
-
-```
-AccountId60000051ActionCreateUSMSTemplateInternationaltruePurpose1Templatethis is a test templateTemplateNametest template AccountId60000051ActionCreateUSMSTemplateInternationaltruePurpose1Templatethis is a test templateTemplateNametest templateYmZmYWJiZTItZmFlNC00MWMwLTk4MzUtOWM5NjZhZjhhODJm
-```
-
-TODO: 需要确认我们SDK的规则是否和ucloud统一，关于空格和自定义符号怎么说？
-
-注意：
-
-- 对于 bool 类型，应编码为 true/false
-- 对于浮点数类型，如果小数部分为 0，应仅保留整数部分，如 42.0 应保留 42
-- 对于浮点数类型，不能使用科学计数法
-
-## 三、生成签名值
-
-使用SHA1编码被签名参数串，生成请求签名
-
-## 四、SDK中内置处理签名处理算法
-
-```go
-package main
-
-import (
-	"fmt"
-
-	"github.com/uSpeedo/usms-sdk-go/um/auth"
-)
-
-func main() {
-	params := map[string]interface{} {
-		"Action": "CreateUSMSTemplate",
-		"AccountId": um.Int(600000),
-		"Purpose": um.Int(1),
-		"International": true,
-		"TemplateName": um.String("test template"),
-		"Template": um.String("this is a test template"),
-	}
-	r := auth.CalculateSignature(params, AccessKeySecret)
-	fmt.Print("r", r)
-}
-```
+![image](https://user-images.githubusercontent.com/116861648/226555197-bf811f5b-3e0f-4fba-b89e-a485d55c3229.png)

@@ -2,5 +2,5 @@
 sidebar_label: 'Use the SMS API or SDKs'
 sidebar_position: 2
 ---
-
-注册相关的文章
+# Use the SMS API or SDKs
+[Get started with SDKs](../../sdk/Introduction-1)
