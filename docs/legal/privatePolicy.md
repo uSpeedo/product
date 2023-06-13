@@ -30,7 +30,7 @@ This Privacy Policy applies to our customers, prospective customers, our custome
 
 ### What personal data do we process?
 
-When you use our website, sign up for a UM event, or request information about UM or our products, when you contact our Sales Team or Customer Support Team, we may collect the following personal data:
+When you use our website, sign up for a uSpeedo event, or request information about uSpeedo or our products, when you contact our Sales Team or Customer Support Team, we may collect the following personal data:
 
 Personal Information
 
@@ -52,7 +52,7 @@ We process personal data for the following purposes:
 
 ### Transfer of your personal data
 
-For checking and analyzing the use of our website, registering visitors who want to receive our newsletter, or want to visit an event of UM, or for marketing of UM services if you have consented to this, or co-marketing of relevant services of a third party provided by UM, or cloud storage of data, we can engage third party service providers. These service providers may receive personal data. These service providers will act for or on behalf of us in accordance with the purpose(s) for which the data was originally collected or otherwise legally processed. These service providers may not use your personal data for other purposes, sell it to third parties or disclose it (unless required to do so by law, as permitted by us, or as stated in this Privacy Policy).
+For checking and analyzing the use of our website, registering visitors who want to receive our newsletter, or want to visit an event of uSpeedo, or for marketing of uSpeedo services if you have consented to this, or co-marketing of relevant services of a third party provided by uSpeedo, or cloud storage of data, we can engage third party service providers. These service providers may receive personal data. These service providers will act for or on behalf of us in accordance with the purpose(s) for which the data was originally collected or otherwise legally processed. These service providers may not use your personal data for other purposes, sell it to third parties or disclose it (unless required to do so by law, as permitted by us, or as stated in this Privacy Policy).
 
 For analyzing the use of our platform and web applications we can also use service providers. In this context we explicitly do not process any personal data. We only collect anonymized analytical information to improve our platform.
 
@@ -88,19 +88,19 @@ You can delete all cookies that are already on your computer and you can set mos
 
 ### Rights to personal data
 
-You can request UM to access your personal data that we have collected. If the data contains incorrect information, you may request UM to correct and/or supplement such data. You may also request to restrict the processing, delete and/or receive your personal data. Furthermore, you may contact UM at any time to object to the processing of your personal data. If you receive a marketing e-mail from us, you will be given an opportunity to unsubscribe at the bottom of each e-mail.
+You can request uSpeedo to access your personal data that we have collected. If the data contains incorrect information, you may request uSpeedo to correct and/or supplement such data. You may also request to restrict the processing, delete and/or receive your personal data. Furthermore, you may contact uSpeedo at any time to object to the processing of your personal data. If you receive a marketing e-mail from us, you will be given an opportunity to unsubscribe at the bottom of each e-mail.
 
 ### Security measures
 
-UM attaches great importance to the security and integrity of its platform. Our IT department is active 24/7 to monitor security and UM meets the requirements for appropriate technical and organizational measures to ensure a risk-appropriate level of security. UM has implemented administrative, physical, and technical safeguards to help protect the personal data that we transmit and maintain. However, no system or service can provide a 100% guarantee of security, especially a service that relies upon the public internet. Therefore, you acknowledge the risk that third parties may gain unauthorized access to your information. Keep your account password secret and please let us know immediately if you think your password was compromised. Remember, you are responsible for any activity under your account using your account password or other credentials. All data is processed and stored in our own data center. The data center is located in the Hong Kong. More information about security can be found on [our website](https://uspeedo.com/).
+uSpeedo attaches great importance to the security and integrity of its platform. Our IT department is active 24/7 to monitor security and uSpeedo meets the requirements for appropriate technical and organizational measures to ensure a risk-appropriate level of security. uSpeedo has implemented administrative, physical, and technical safeguards to help protect the personal data that we transmit and maintain. However, no system or service can provide a 100% guarantee of security, especially a service that relies upon the public internet. Therefore, you acknowledge the risk that third parties may gain unauthorized access to your information. Keep your account password secret and please let us know immediately if you think your password was compromised. Remember, you are responsible for any activity under your account using your account password or other credentials. All data is processed and stored in our own data center. The data center is located in the Hong Kong. More information about security can be found on [our website](https://uspeedo.com/).
 
 ### Social Media
 
-UM is not responsible for the processing of personal data when you visit UM company pages on social media websites like Facebook, Twitter, LinkedIn etc. or use other content that is not on our website or domain. The privacy policies and notices of those websites apply thereto and we advise you to take notice of those described statements and content of any linked sites that you visit.
+uSpeedo is not responsible for the processing of personal data when you visit uSpeedo company pages on social media websites like Facebook, Twitter, LinkedIn etc. or use other content that is not on our website or domain. The privacy policies and notices of those websites apply thereto and we advise you to take notice of those described statements and content of any linked sites that you visit.
 
 ### Changes to Privacy Policy
 
-UM reserves the right to change this Privacy Policy. We therefore advise you to check this page regularly to see if any changes have been made.
+uSpeedo reserves the right to change this Privacy Policy. We therefore advise you to check this page regularly to see if any changes have been made.
 
 ### Contact
 
