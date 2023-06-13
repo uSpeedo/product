@@ -9,8 +9,8 @@ Short Message Service (SMS) is a messaging service that allows you to send messa
 
 ## Billing methods
 
-All customers can pay via credit card or bank transfers.See [Billing type](/docs/whatsapp/Billing-3) for more detail.
+All customers can pay via credit card or bank transfers.See [Billing type](/docs/whatsapp/sdk) for more detail.
 
 ## Quick start guides
 
-For information about how to use the SMS service, see [Use the SMS console](/docs/whatsapp/started/console) and [Use the SMS API or SDKs](/docs/whatsapp/started/sdks) 
+For information about how to use the SMS service, see [Use the SMS console](/docs/whatsapp/sdk) and [Use the SMS API or SDKs](/docs/whatsapp/sdk) 
