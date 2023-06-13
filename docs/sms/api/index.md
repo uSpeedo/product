@@ -40,10 +40,10 @@ sidebar_position: 1
 ## API List
 
 - SMS Template
-  - [Create USMS Template](/docs/api/list/CreateUSMSTemplate)
-  - [Delete USMS Template](/docs/api/list/DeleteUSMSTemplate)
-  - [Update USMS Template](/docs/api/list/UpdateUSMSTemplate)
-  - [Query USMS Template](/docs/api/list/QueryUSMSTemplate)
+  - [Create USMS Template](/docs/sms/api/list/CreateUSMSTemplate)
+  - [Delete USMS Template](/docs/sms/api/list/DeleteUSMSTemplate)
+  - [Update USMS Template](/docs/sms/api/list/UpdateUSMSTemplate)
+  - [Query USMS Template](/docs/sms/api/list/QueryUSMSTemplate)
 - Send SMS
-  - [Send Batch USMS Message](/docs/api/list/SendBatchUSMSMessage)
-  - [Get USMS Send Receipt](/docs/api/list/GetUSMSSendReceipt)
+  - [Send Batch USMS Message](/docs/sms/api/list/SendBatchUSMSMessage)
+  - [Get USMS Send Receipt](/docs/sms/api/list/GetUSMSSendReceipt)

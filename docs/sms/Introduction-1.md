@@ -9,8 +9,8 @@ Short Message Service (SMS) is a messaging service that allows you to send messa
 
 ## Billing methods
 
-All customers can pay via credit card or bank transfers.See [Billing type](./Billing-3) for more detail.
+All customers can pay via credit card or bank transfers.See [Billing type](/docs/sms/started/Billing-3) for more detail.
 
 ## Quick start guides
 
-For information about how to use the SMS service, see [Use the SMS console](./started/console) and [Use the SMS API or SDKs](./started/sdks) 
+For information about how to use the SMS service, see [Use the SMS console](/docs/sms/started/console) and [Use the SMS API or SDKs](/docs/sms/started/sdks) 
