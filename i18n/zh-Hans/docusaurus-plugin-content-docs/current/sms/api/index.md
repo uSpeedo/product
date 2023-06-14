@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 一、准备工作
 
-- 1、获取签名：用来调用接口鉴权使用，[获取签名](/docs/sms/sdk/signature-2)
+- 1、获取签名：用来调用接口鉴权使用，[获取签名](/docs/sms/signature-1)
 - 2、AccountId: 服务账号，每个用户默认只有一个，需要开通更多需要联系运营support@uspeedo.com，[获取AccountId](https://console.uspeedo.com/sms/overview)，如下图
 
 ![AccountId](/img/sdk/accountId.png)
