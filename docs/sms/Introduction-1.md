@@ -7,10 +7,14 @@ sidebar_position: 1
 
 Short Message Service (SMS) is a messaging service that allows you to send messages to recipients in more than 200 countries and regions. You can perform these operations by using the SMS console or SMS APIs. 
 
-## Billing methods
+## How To Get AccessKey
 
-All customers can pay via credit card or bank transfers.See [Billing type](/docs/sms/started/Billing-3) for more detail.
+Before an api calling, you should obtain access key, see [How To Get AccessKey](./get-accesskey-1.md) for more detail.
+
+## How To Make Signature
+
+Before an api calling, you also need to known about api signature, see [How to Construct Api Signature](./signature-1.md)
 
 ## Quick start guides
 
-For information about how to use the SMS service, see [Use the SMS console](/docs/sms/started/console) and [Use the SMS API or SDKs](/docs/sms/started/sdks) 
+For information about how to use the SMS service, see [Use the SMS console](./started/console.md) and [Use the SMS API or SDKs](./sdk/Introduction-1.md) 
