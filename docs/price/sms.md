@@ -14,4 +14,6 @@ Get access to worldwide pricing tailored to your needs
 | Thailand          | 0.0085USD            | 0.0113USD          | 
 | United States     | 0.0113USD            | 0.0254USD          |
 | Nigeria           | 0.0986USD            | 0.0986USD          |
+| ...           | ...            | ...          |
 
+Notes: If you have any questions or need further help, please don't hesitate to contact us: customersuccess@uspeedo.com
