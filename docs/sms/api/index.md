@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## Preparation
 
-- Get signature: Used for API authentication, [View](../sdk/signature-2). 
+- Get signature: Used for API authentication, [View](/docs/sms/signature-1). 
 - AccountId: Service account, each user has only one by default. To obtain more, please contact support@uspeedo.com. [Get AccountId](https://console.uspeedo.com/sms/overview), as shown below:
 
 ![AccountId](/img/sdk/accountId.png)
