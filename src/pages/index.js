@@ -11,8 +11,6 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const { siteConfig, i18n } = useDocusaurusContext();
 
-  console.log("i18n", siteConfig, i18n.currentLocale)
-
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
