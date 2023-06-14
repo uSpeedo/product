@@ -50,51 +50,7 @@ go mod tidy
 - SMS signature (SigContent): For first-time use, you need to apply for a signature in the UCloud console. After the signature is approved, pass the signature to this location. When there is a default signature, this parameter can be left blank.
 
 ### 4) Construct API signature
-
-> The signature generator first puts all parameters and values into a map and sorts them in ascending order by key value. Then concatenate all parameters to form the signature text. Finally, sign the signature text using SHA1. If the interface requires uploading requests such as pictures/videos, the file stream does not participate in the signature. Please convert the file to a file stream format and request it in file stream format.
-
-1) Obtain AccessKeySecret from console account
-
-```json
-MjI3YmYyMjItNmM4Mi00ZGM5LWEwNDQtN2EzZjM0Yzk2OWE1
-```
-
-2) Get the request body of the request and sort it in ascending order of ASCII code of the first character of each key (ascending order of letters). If the same character is encountered, sort it in ascending order of ASCII code of the second character, and so on.
-
-```json
-{
-    "Action"     :  "SendBatchUSMSMessage",
-    "Limit"      :  10,
-    "Region"     :  "cn-bj2"
-}
-```
-
-3) Combine the sorted parameters with their corresponding values in the format of "parameter=value", and concatenate "AccessKeySecret" at the end of this signature string. The resulting string is the string to be signed.
-
-```
-ActionSendBatchUSMSMessageLimit10Regioncn-bj2MjI3YmYyMjItNmM4Mi00ZGM5LWEwNDQtN2EzZjM0Yzk2OWE1
-```
-
-4) Calculate the signature value
-
-Use SHA1 to encode the string to be signed and generate the request signature.
-
-```
-575fd93b539c4eb9837c8de6651e92389456adfa
-```
-
-5) Set HTTP headers
-
-API requests require the signature information to be passed through HTTP headers, which must include the following four parameters
-
-X-Signature Signature value.
-
-X-Timestamp Timestamp, within five minutes.
-
-X-Nonce Random string.
-
-X-Access-Key-Id AccessKeyId of the console account.
-
+See [How To Construct Api Signature](../../signature-1.md)
 
 ## 3. Example
 
