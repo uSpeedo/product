@@ -10,4 +10,6 @@ Discover the most suitable service plan for your business.
 |  Pricing   | 0.0009USD/email       |
 | ------------- | ---------------- |
 
-Notes：Please confirm the mail address you enter in is a valid address.
+* Please confirm the mail address you enter in is a valid address.
+
+Notes: If you have any questions or need further help, please don't hesitate to contact us: customersuccess@uspeedo.com
