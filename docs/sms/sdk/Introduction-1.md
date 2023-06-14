@@ -27,9 +27,9 @@ You can choose multiple SDK access methods. Please choose according to your deve
 
 If you do not have the SDK you need, please contact technical support at support@uspeedo.com.
 
-- [Golang](./package/go)
+- [Golang](/docs/sms/sdk/package/go)
 
 ## 4. Choose API
 When using the SDK, you can choose to call the corresponding API interface. You can modify the corresponding parameters in the example according to the API documentation for calling.
 
-Open API list: [View](../api).
+Open API list: [View](/docs/sms/api).
