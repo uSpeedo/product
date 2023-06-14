@@ -820,4 +820,4 @@ Transparent and intuitive pricing that delivers real business value
 | Jamaica                     | JM          | Service        | 0.061  |
 | Rest of the area            |             | Service        | 0.036  |
 
-
+Notes: If you have any questions or need further help, please don't hesitate to contact us: customersuccess@uspeedo.com
