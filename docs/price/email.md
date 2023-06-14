@@ -19,9 +19,6 @@ Planning to send over 50,000 emails per month? Contact sales for a pe
 quotation.
 (Contact Sales跳转到留咨框）
 
-| Country | Type   | Pricing       |
-| ------------- | ----- | ---------------- |
-| xxx  | xxx | TBC    |
-| xxx        | xxx| TBC      |
-| xxx        | xxx    | TBC  |
-| xx     | xxx    | TBC |
+|  Pricing   | 0.0009USD/email       |
+| ------------- | ---------------- |
+
