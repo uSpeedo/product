@@ -93,7 +93,7 @@ const config = {
             type: 'docSidebar', 
             sidebarId: 'price',
             position: 'left',
-            label: 'Price',
+            label: 'Pricing',
           },
           {
             href: 'https://github.com/uSpeedo/product',
