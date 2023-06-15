@@ -5,7 +5,7 @@ Transparent and intuitive pricing that delivers real business value
 - [START FOR FREE](https://console.uspeedo.com/signin)
 
 
-| Country                     | CountryCode | Type           | Price  |
+| Country                     | CountryCode | Type           | Price(USD)  |
 |-----------------------------|-------------|----------------|--------|
 | United States               | US          | Marketing      | 0.036  |
 | Canada                      | CA          | Marketing      | 0.036  |
