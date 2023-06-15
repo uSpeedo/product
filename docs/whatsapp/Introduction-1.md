@@ -24,9 +24,9 @@ To set up a Facebook account, see [How to create a Facebook account](https://www
 2. Phone number
 The sender (phone number) meets the following requirements from WhatsApp:
 
--Must be in the E.164 international format and must be internationally reachable.
--Must be active during the verification process. You will receive either an SMS or a voice call for 2FA and to confirm number ownership.
--No short codes.
--No toll-free numbers or numbers under IVR. Refer to the guidance in the Important Information section for embedded signup.
--Number must not been used with the WhatsApp Business API before.
--If the number is already registered in the Android, iPhone, or Business Application versions of WhatsApp, refer to the guidance in the Important Information section for embedded signup.
+- Must be in the E.164 international format and must be internationally reachable.
+- Must be active during the verification process. You will receive either an SMS or a voice call for 2FA and to confirm number ownership.
+- No short codes.
+- No toll-free numbers or numbers under IVR. Refer to the guidance in the Important Information section for embedded signup.
+- Number must not been used with the WhatsApp Business API before.
+- If the number is already registered in the Android, iPhone, or Business Application versions of WhatsApp, refer to the guidance in the Important Information section for embedded signup.
