@@ -111,19 +111,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Community',
+            title: 'Products',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'SMS',
+                href: 'https://console.uspeedo.com/sms/overview',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'WhatsApp',
+                href: 'https://console.uspeedo.com/whatsapp/overview',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Email',
+                href: 'https://console.uspeedo.com/email/overview',
               },
             ],
           },
@@ -131,13 +131,13 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'uSpeedo',
+                href: 'https://uspeedo.com/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} uSpeedo All Rights Reserved`,
       },
       prism: {
         theme: lightCodeTheme,
