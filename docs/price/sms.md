@@ -5,7 +5,7 @@ sidebar_label: 'SMS'
 
 Get access to worldwide pricing tailored to your needs
 
-- [START FOR FREE](https://console.uspeedo.com/signin)
+- [START FOR FREE](https://console.uspeedo.com/signup)
 
 ### **Pay as you go**
 - Grow your business with pay-per-use model which can put you in control of your spending.
