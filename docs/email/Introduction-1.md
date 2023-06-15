@@ -1,7 +1,7 @@
 ---
-sidebar_label: 'Get Started'
+sidebar_label: 'Quick Start'
 sidebar_position: 1
 ---
 
-# Get Started 
+# Quick Start 
 ![](/img/email/start_guide.png)
