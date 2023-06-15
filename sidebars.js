@@ -11,24 +11,40 @@
 
 // @ts-check
 const fs = require('fs')
+const path = require('path')
 
 const generateItem = (menu) => {
   let dir = fs.readdirSync(`docs/${menu}`)
   const fileList = []
   dir.forEach(dirname => {
     const isFile = fs.statSync(`docs/${menu}/${dirname}`).isFile()
-    if(isFile){
+    if(isFile && (dirname.endsWith('.md')||(dirname.endsWith('.mdx')))){
       fileList.push(dirname)
     }
   })
+  const hasConfig = fs.existsSync(`docs/${menu}/config.json`)
+  const configInfo = path.resolve(`docs/${menu}/config.json`)
   return fileList.map(file => {
     return file.replace(/(\.md|\.mdx)$/i, '')
   }).sort((a, b) => {
-    const fileNameStrA = a.split("-")
-    const fileNumA = fileNameStrA[fileNameStrA.length-1] || 0
-    const fileNameStrB = b.split("-")
-    const fileNumB = fileNameStrB[fileNameStrB.length-1] || 0
-    return fileNumA - fileNumB
+    if(hasConfig){
+      try{
+        const data = fs.readFileSync(configInfo, 'utf8')
+        // 解析 JSON 数据
+        const { order } = JSON.parse(data);
+        const aNum = order.indexOf(a)
+        const bNum = order.indexOf(b)
+        return aNum - bNum;
+      }catch(err){
+        throw err
+      }
+    }else{
+      const fileNameStrA = a.split("-")
+      const fileNumA = fileNameStrA[fileNameStrA.length-1] || 0
+      const fileNameStrB = b.split("-")
+      const fileNumB = fileNameStrB[fileNameStrB.length-1] || 0
+      return fileNumA - fileNumB
+    }
   }).map(file => `${menu}/${file}`)
 }
 
@@ -110,7 +126,7 @@ const sidebars = {
     }]
   }],
   price: [
-    ...generateItem('price')
+    ...generateItem("price")
   ]
 };
 

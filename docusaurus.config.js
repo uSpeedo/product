@@ -59,7 +59,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
-        title: 'uSpeedo111',
+        title: 'uSpeedo',
         logo: {
           alt: 'uSpeedo',
           src: 'img/logo.png',

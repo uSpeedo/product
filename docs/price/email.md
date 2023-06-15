@@ -1,3 +1,7 @@
+---
+sidebar_label: 'Email'
+---
+
 # Email Pricing
 
 Discover the most suitable service plan for your business.

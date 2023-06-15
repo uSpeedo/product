@@ -1,3 +1,6 @@
+---
+sidebar_label: 'SMS'
+---
 # SMS Pricing
 
 Get access to worldwide pricing tailored to your needs
