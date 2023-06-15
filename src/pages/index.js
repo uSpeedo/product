@@ -21,8 +21,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to="/docs/sms/signature-1">
-            Getting Started
+            to="/docs/sms/Introduction-1">
+            Get Started
           </Link>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} Docs`}
+      title={`${siteConfig.title}`}
       description="uSpeedo SMS document">
       <HomepageHeader />
       <HomepageMain />

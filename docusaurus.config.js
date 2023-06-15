@@ -29,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans']
+    locales: ['en']
   },
 
   presets: [
@@ -59,10 +59,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
-        title: 'uSpeedo Docs',
+        title: 'uSpeedo111',
         logo: {
           alt: 'uSpeedo',
           src: 'img/logo.png',
+          href: 'https://uspeedo.com'
         },
         items: [
           {

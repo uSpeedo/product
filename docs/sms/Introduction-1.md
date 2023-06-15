@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Getting Started'
+sidebar_label: 'Get Started'
 sidebar_position: 1
 ---
 
-# Getting Started
+# Get Started
 
 Short Message Service (SMS) is a messaging service that allows you to send messages to recipients in more than 200 countries and regions. You can perform these operations by using the SMS console or SMS APIs. 
 
