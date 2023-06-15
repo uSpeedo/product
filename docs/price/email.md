@@ -6,7 +6,7 @@ sidebar_label: 'Email'
 
 Discover the most suitable service plan for your business.
 
-- [START FOR FREE](https://console.uspeedo.com/signin)
+- [START FOR FREE](https://console.uspeedo.com/signup)
 
 ### **Pay as you go**
 - Grow your business with pay-per-use model which can put you in control of your spending.
