@@ -19,7 +19,7 @@ AccessKey pairs are security tokens used to access product resources by calling 
 
 1. a Facebook account
 
-To set up a Facebook account, see [How to create a Facebook account](https://www.facebook.com/help/188157731232424))
+To set up a Facebook account, see [How to create a Facebook account](https://www.facebook.com/help/188157731232424)
 
 2. Phone number
 The sender (phone number) meets the following requirements from WhatsApp:
