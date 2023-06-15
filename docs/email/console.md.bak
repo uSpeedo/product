@@ -1,9 +1,4 @@
----
-sidebar_label: 'Use The Email Console'
-sidebar_position: 1
----
-
-# Use the Email console
+## Use the Email console
 ### 1 Settings and Configuration
 #### 1.1 Domain
 Click the New Domain button.
@@ -24,6 +19,8 @@ Click the New Sender button.
 ![](/img/email/guide_7.png)
 Enter the sender creation page, fill in the email address and nickname corresponding to the domain name, and submit. Complete the sender addition.
 ![](/img/email/guide_8.png)
+
+
 ### 2 Email template Creation and Editing
 #### 1. Create Email Template.
    According to the picture, find the template management list page, click the New Template button, and select an editor.
