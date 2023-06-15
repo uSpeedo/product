@@ -1,6 +1,5 @@
 # Dependencies
 /node_modules
-CNAME
 
 # Production
 /build
