@@ -5,7 +5,7 @@ sidebar_label: 'WhatsApp'
 
 Transparent and intuitive pricing that delivers real business value
 
-- [START FOR FREE](https://console.uspeedo.com/signin)
+- [START FOR FREE](https://console.uspeedo.com/signup)
 
 
 | Country   | CountryCode | Type           | Price(USD) |
