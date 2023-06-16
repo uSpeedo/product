@@ -1,11 +1,9 @@
 ---
-sidebar_label: 'Get started with the WhatsApp Business API'
+sidebar_label: 'Before you begin'
 sidebar_position: 1
 ---
 
-# Get started with the WhatsApp Business API
-
-## Before you begin
+# Before you begin
 
 1. Create a uSpeedo account and complete upgrade.
 
