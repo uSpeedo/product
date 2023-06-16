@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Get AccessKeyId'
+sidebar_label: 'How to get accessKeyId'
 sidebar_position: 2
 ---
 
