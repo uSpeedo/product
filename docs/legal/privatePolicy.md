@@ -22,7 +22,7 @@ We know your privacy is important to you, and we want you to know it’s importa
 
 ## Who we are
 
-UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED (“We”, “Our”, “Us” or “UM”), is a global provider of cloud communications. For our business and residential customers, we offer a complete and fully-configured unified communications solution for the delivery of end-to-end communications via text and collaboration tools. We provide our communications services in programmable modules delivered via APIs and SDKs, enabling our customers to incorporate these services into their own applications to serve their own customers.
+UCLOUD INFORMATION TECHNOLOGY (HK) LIMITED ("We", "Our", "Us" or "uSpeedo"), is a global provider of cloud communications. For our business and residential customers, we offer a complete and fully-configured unified communications solution for the delivery of end-to-end communications via text and collaboration tools. We provide our communications services in programmable modules delivered via APIs and SDKs, enabling our customers to incorporate these services into their own applications to serve their own customers.
 
 This Privacy Policy applies to our customers, prospective customers, our customers’ customers (both direct and indirect), and visitors to our company websites, including but not limited to [uspeedo.com](https://uspeedo.com/). **If you do not agree with this Privacy Policy, do not access or use our services or interact with any other aspect of our business.** Note: if you’re a user of an application that is integrated or built using UM’s products and services, that application’s privacy policy will describe how it collects, uses, stores, and shares your data. We are not responsible for the privacy policies or actions of our customers.
 
@@ -84,7 +84,7 @@ These cookies and other technologies record your visits to our website, the page
 
 How to control cookies
 
-You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work. You will not be able to opt-out of any cookies or other technologies that are “strictly necessary” for the services. Where you have not set your permissions, we may also separately prompt you regarding our use of cookies on the site.
+You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work. You will not be able to opt-out of any cookies or other technologies that are "strictly necessary" for the services. Where you have not set your permissions, we may also separately prompt you regarding our use of cookies on the site.
 
 ### Rights to personal data
 
