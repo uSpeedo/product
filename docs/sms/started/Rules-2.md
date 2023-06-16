@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Rules for messages'
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 # Rules for messages
