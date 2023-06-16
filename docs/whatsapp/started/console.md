@@ -38,3 +38,6 @@ You can use the [analytics](https://console.uspeedo.com/whatsapp/analytics) to q
 ## Receiving address
 
 Before using API to send messages, please [configure the callback or webhook URL](https://console.uspeedo.com/whatsapp/setting) as the receiving address to receive message status information.
+
+![image](https://github.com/uSpeedo/product/assets/116861648/92fbde9c-5b91-4510-81ba-f30627164362)
+
