@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Get AccessKeyId'
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # How to get accessKeyId
