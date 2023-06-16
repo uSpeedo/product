@@ -42,8 +42,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/uSpeedo/product/blob/dev',
+          // editUrl:
+          //   'https://github.com/uSpeedo/product/blob/dev',
         },
         blog: false,
         theme: {
@@ -96,11 +96,11 @@ const config = {
             position: 'left',
             label: 'Pricing',
           },
-          {
-            href: 'https://github.com/uSpeedo/product',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/uSpeedo/product',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
           {
             type: 'localeDropdown',
             position: 'right',

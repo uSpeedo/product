@@ -30,27 +30,30 @@ export const Comment = forwardRef((_props, ref) => {
   if (!routeDidUpdate) {
     return null;
   }
-
   return (
-    <BrowserOnly fallback={<div>Loading Comments...</div>}>
-      {() => (
-        <div ref={ref} id="comment" style={{ paddingTop: 50 }}>
-          <Giscus
-            id="comments"
-            mapping="title"
-            strict="1"
-            reactionsEnabled="1"
-            emitMetadata="0"
-            inputPosition="bottom"
-            lang={i18n.currentLocale}
-            loading="lazy"
-            {...giscus}
-            theme={giscusTheme}
-          />
-        </div>
-      )}
-    </BrowserOnly>
-  );
+      <div></div>
+  )
+
+  // return (
+  //   <BrowserOnly fallback={<div>Loading Comments...</div>}>
+  //     {() => (
+  //       <div ref={ref} id="comment" style={{ paddingTop: 50 }}>
+  //         <Giscus
+  //           id="comments"
+  //           mapping="title"
+  //           strict="1"
+  //           reactionsEnabled="1"
+  //           emitMetadata="0"
+  //           inputPosition="bottom"
+  //           lang={i18n.currentLocale}
+  //           loading="lazy"
+  //           {...giscus}
+  //           theme={giscusTheme}
+  //         />
+  //       </div>
+  //     )}
+  //   </BrowserOnly>
+  // );
 });
 
 export default Comment;
