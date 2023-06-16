@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Quick Start'
+sidebar_label: 'Get started with the api'
 sidebar_position: 1
 ---
 
