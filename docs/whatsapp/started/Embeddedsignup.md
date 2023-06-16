@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Embedded signup'
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Embedded signup
