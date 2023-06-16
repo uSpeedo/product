@@ -18,7 +18,7 @@ Conversations are categorized with one of the following categories:
 
 Marketing, utility, and authentication conversations can only be opened with template messages. Service messages can only be opened with free-form messages. See Opening Conversations below.
 
-To learn more about conversation categories and how to choose an appropriate category when creating your templates, see [Template Categorization](docs/whatsapp/started/template).
+To learn more about conversation categories and how to choose an appropriate category when creating your templates, see [Template Categorization](docs/whatsapp/started/template.md).
 
 ## Opening Conversations
 
