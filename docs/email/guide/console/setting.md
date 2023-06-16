@@ -17,7 +17,7 @@ After confirming that it is correct, click the Verify Configuration button on th
 ![](/img/email/guide_5.png)
 ![](/img/email/guide_6.png)
 
-# Sender
+## Sender
 Click the New Sender button.
 ![](/img/email/guide_7.png)
 Enter the sender creation page, fill in the email address and nickname corresponding to the domain name, and submit. Complete the sender addition.
