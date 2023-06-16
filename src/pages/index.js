@@ -21,7 +21,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to="/docs/sms/Introduction-1">
+            to="/docs/sms/sdk/Introduction-1">
             Get Started
           </Link>
         </div>
