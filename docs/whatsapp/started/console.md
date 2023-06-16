@@ -7,7 +7,7 @@ sidebar_position: 2
 
 ## Add Number
 
-WABA is registered under the meta business account, and the WhatsApp number is bound under WABA In theory, 20 WABAs can be registered under one meta business account, and 20 WhatsApp numbers can be bound under one WABA. Refer to the [Embedded signup](docs/whatsapp/started/Embedded signup.md) for more information.
+WABA is registered under the meta business account, and the WhatsApp number is bound under WABA In theory, 20 WABAs can be registered under one meta business account, and 20 WhatsApp numbers can be bound under one WABA. Refer to the [Embedded signup](docs/whatsapp/started/Embeddedsignup.md) for more information.
 ![image](https://github.com/uSpeedo/product/assets/116861648/e5b77109-549c-448e-83b1-44ed3a804244)
 
 ## Message templates
