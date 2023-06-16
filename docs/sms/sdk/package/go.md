@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ### 1) Obtain API key information
 
-Before calling the API, you need to obtain the key information to generate the `X-Signature` signature. You need to provide `AccessKeyId` and `AccessKeySecret`, which can be obtained from the console account. For detailed steps on how to obtain them, please refer to: [How to obtain AccessKeyId and AccessKeySecret](/docs/sms/signature-1).
+Before calling the API, you need to obtain the key information to generate the `X-Signature` signature. You need to provide `AccessKeyId` and `AccessKeySecret`, which can be obtained from the console account. For detailed steps on how to obtain them, please refer to: [How to obtain AccessKeyId and AccessKeySecret](/docs/sms/api/signature-1).
 
 ### 2) Apply for SMS template
 
@@ -50,7 +50,7 @@ go mod tidy
 - SMS signature (SigContent): For first-time use, you need to apply for a signature in the UCloud console. After the signature is approved, pass the signature to this location. When there is a default signature, this parameter can be left blank.
 
 ### 4) Construct API signature
-See [How To Construct Api Signature](/docs/sms/signature-1.md)
+See [How To Construct Api Signature](/docs/sms/api/signature-1.md)
 
 ## 3. Example
 
