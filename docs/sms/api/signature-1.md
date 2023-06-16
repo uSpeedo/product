@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'API Signature'
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # How to construct api signature
