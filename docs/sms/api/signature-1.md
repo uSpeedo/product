@@ -9,7 +9,7 @@ sidebar_position: 3
 
 When generating the signature (`X-Signature`) in an API request, you need to provide the `AccessKeyId` and `AccessKeySecret`, which can be obtained from your console account.
 
-See : [How to get AccessKeyId](/docs/sms/get-accesskey-1.md)
+See : [How to get AccessKeyId](/docs/sms/api/get-accesskey-1.md)
 
 ## Constructing the Signature String
 
