@@ -19,13 +19,19 @@ AccessKey pairs are security tokens used to access product resources by calling 
 
 1. Create a message template. [New template quikly](https://console.uspeedo.com/sms/new-template).
 
+![image](https://github.com/uSpeedo/product/assets/116861648/9094f004-87d7-4082-910b-af99f2ea6332)
+
 2. Wait until the message template is approved.
 
 3. Create a messaging campaign. [Try to send messages](https://console.uspeedo.com/sms/message). You can send messages to multiple mobile phone numbers at a time.
 
 ## Query message details
 
-[Messaging campaign details](https://console.uspeedo.com/sms/message). Here, you can view the details of the messaging campaign, including the delivery time, delivery status, total number of mobile phone numbers to which the message is sent, and number of mobile phone numbers to which the message fails to be sent. On the [Message Search page](https://console.uspeedo.com/sms/search), you can view the details of sent messages by mobile phone number, delivery date, delivery status, or destination country or region.
+[Messaging campaign details](https://console.uspeedo.com/sms/sending). Here, you can view the details of the messaging campaign, including the delivery time, delivery status, total number of mobile phone numbers to which the message is sent, and number of mobile phone numbers to which the message fails to be sent. On the [Message Search page](https://console.uspeedo.com/sms/search), you can view the details of sent messages by mobile phone number, delivery date, delivery status, or destination country or region.
+
+![image](https://github.com/uSpeedo/product/assets/116861648/8b831f35-a0e6-463f-87ec-df182f719812)
+
+![image](https://github.com/uSpeedo/product/assets/116861648/604eb6e3-bd9a-4400-9eb2-aee43f5d79b3)
 
 ## Message Analytics
 
