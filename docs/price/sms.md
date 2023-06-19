@@ -3,7 +3,7 @@ sidebar_label: 'SMS'
 ---
 # SMS Pricing
 
-Get access to worldwide pricing tailored to your needs
+Get access to worldwide pricing tailored to your needs.
 
 - [START FOR FREE](https://console.uspeedo.com/signup)
 
