@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Quick Start'
+sidebar_label: 'Quick start'
 sidebar_position: 1
 ---
 
-# Quick Start 
+# Quick start 
 ![Email-quick start](https://github.com/uSpeedo/product/assets/132056756/313a67ea-43e1-40c4-8eaa-c48b77035092)
 
 # Before you begin
