@@ -3,7 +3,7 @@ sidebar_label: 'WhatsApp'
 ---
 # WhatsApp Business API Pricing
 
-Transparent and intuitive pricing that delivers real business value
+Transparent and intuitive pricing that delivers real business value.
 
 - [START FOR FREE](https://console.uspeedo.com/signup)
 
