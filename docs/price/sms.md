@@ -21,7 +21,7 @@ Get access to worldwide pricing tailored to your needs.
 | ...           | ...            | ...          |
 
 ### **Text messages are charged per segment**
--A single SMS message technically supports up to 160 characters, or up to 70 if the message contains one or more Unicode characters.(such as Chinese characters).
+-A single SMS message technically supports up to 160 characters, or up to 70 if the message contains one or more Unicode characters (such as Chinese characters).
 
 -Messages longer than 160 characters are automatically split into 153-character "segments". 
 For example, a 161-character message will be sent as two messages: one with 153 characters and a second with eight characters.
