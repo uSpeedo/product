@@ -7,9 +7,12 @@ sidebar_position: 2
 ### 1 Settings and Configuration
 #### 1.1 Domain
 Click the New Domain button.
-![](/img/email/guide_1.png)
-Enter the domain name creation page, select the domain name type, fill in a second-level domain name, and submit.
-![](/img/email/guide_2.png)
+![](https://markdown.liuchengtu.com/work/uploads/upload_eca95692d98bd109b15947462ca4cef7.png)
+
+
+Enter the domain name creation page, select
+the domain name type, fill in a second-level domain name, and submit.
+![](https://markdown.liuchengtu.com/work/uploads/upload_2ff3ed21302ab0e076c45d9204687e90.png)
 
 Click the config button to enter the domain resolution verification page. As shown in the figure, fill in the configuration information of the four parameters in turn on the domain resolution page of your domain management platform.
 ![](/img/email/guide_3.png)
