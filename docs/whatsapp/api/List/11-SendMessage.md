@@ -35,9 +35,7 @@ To send message through a business phone.
 | body        | string  | The body of a text message can contain a URL or formatting elements. The formatting elements are described as follows. Bold: Bold text, for example, Your total is **$10.50**. Italics: Text that requires italics, such as Your total is *$10.50*. Underline: Text that requires strikethrough , for example, Your total is ~~$10.50~~.                                         | YES      |
 | preview_url | boolean | Whether to enable URL preview. If true is set to enable URL preview, and false is set to disable URL preview. The URL must start with http:// or https:// and be followed by the link address information expressed in the domain name (the link address expressed in the IP address is not identified). URL preview is a message rendering feature supported by WhatsApp client side. | NO       |
 
-
-
-## Types of Text Messages, Example JSON
+### Types of Text Messages, Example JSON
 
 ```json
 {
@@ -54,7 +52,7 @@ To send message through a business phone.
 | id      | string | (Either id or link) Image storage ID, obtained after uploading the file through the Media interface. | NO       |
 | caption | string | Description of image                                                                                 | NO       |
 
-## Types of Image Messages, Example JSON
+### Types of Image Messages, Example JSON
 
 ```json
 {
@@ -71,7 +69,7 @@ To send message through a business phone.
 | id      | string | (Either id or link) Video storage ID, obtained after uploading the file through the Media interface. | NO       |
 | caption | string | Description of video                                                                                 | NO       |
 
-## Types of Video Messages, Example JSON
+### Types of Video Messages, Example JSON
 
 ```json
 {
@@ -87,7 +85,7 @@ To send message through a business phone.
 | link | string | (Either id or link) URL link of the audio. It must be HTTP/HTTPS URLs.                               | NO       |
 | id   | string | (Either id or link) Audio storage ID, obtained after uploading the file through the Media interface. | NO       |
 
-## Types of Audio Messages, Example JSON
+### Types of Audio Messages, Example JSON
 
 ```json
 {
@@ -103,7 +101,7 @@ To send message through a business phone.
 | id       | string | (Either id or link) Document storage ID, obtained after uploading the file through the Media interface. | NO       |
 | filename | string | The name of document                                                                                    | NO       |
 
-## Types of Document Messages, Example JSON
+### Types of Document Messages, Example JSON
 
 ```json
 {
@@ -121,7 +119,7 @@ To send message through a business phone.
 | name      | string  | name of file              | NO       |
 | address   | string  | name of file              | NO       |
 
-## Types of Location Messages, Example JSON
+### Types of Location Messages, Example JSON
 
 ```json
 {
@@ -139,7 +137,7 @@ To send message through a business phone.
 | link | string | (Either id or link) URL link of sticker. It must be HTTP/HTTPS URLs.                                   | NO       |
 | id   | string | (Either id or link) sticker storage ID, obtained after uploading the file through the Media interface. | NO       |
 
-## Types of sticker, Example JSON
+### Types of sticker, Example JSON
 
 ```json
 {
@@ -182,7 +180,7 @@ To send message through a business phone.
 | video    | Video    | Set the video content of the corresponding parameter. The video object is defined with reference to the video message. It is required only when type = video. If type is of other types, this parameter is unavailable.                                                                                                                       | NO       |
 | document | Document | Set the document content of the corresponding parameter. The ducument object is defined with reference to the document message. It is required only when type = document. If type is of other types, this parameter is unavailable.                                                                                                           | NO       |
 
-## Types of Verification Code Messages, Example JSON
+#### Types of Verification Code Messages, Example JSON
 
 ```json
 {
@@ -216,7 +214,7 @@ To send message through a business phone.
 }
 ```
 
-## Types of Variable Template Messages, Example JSON
+#### Types of Variable Template Messages, Example JSON
 
 ```json
 {
@@ -243,7 +241,7 @@ To send message through a business phone.
 }
 ```
 
-## Types of Quick Reply Template Messages,Example JSON
+#### Types of Quick Reply Template Messages,Example JSON
 
 ```json
 {
@@ -309,7 +307,7 @@ To send message through a business phone.
 | RequestId | string | Request Id                                            |
 | Data      | object | Return data                                           |
 
-## Data Parameters
+### Data Parameters
 
 | Name      | Type   | Description |
 | --------- | ------ | ----------- |
