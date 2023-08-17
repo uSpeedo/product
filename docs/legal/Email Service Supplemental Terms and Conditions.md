@@ -6,7 +6,7 @@ sidebar_position: 3
 
 # Email Service Supplemental Terms and Conditions
 
-*Effective Date June 1, 2023*
+*Effective Date July 27, 2023*
 
 These Email Service Supplemental Terms and Conditions ("Email Supplemental Terms") describe the terms and conditions that apply to your access to and use of the uSpeedo Email Service. In addition
 to the relevant terms of the uSpeedo Platform Terms of Service, the following additional terms apply if you access or use the uSpeedo Email service. These Email Supplemental Terms form part of the above Terms of Service, and any definitions used in the Terms of Service have the same meanings in these Email Supplemental Terms. Notwithstanding anything else in the Terms of Service, in the event of any conflict or inconsistency between the terms of the Terms of Service and the Email Supplemental Terms, the Email Supplemental Terms shall prevail only to the extent of the conflict or inconsistency.
