@@ -33,15 +33,26 @@ MjI3YmYyMjItNmM4Mi00ZGM5LWEwNDQtN2EzZjM0Yzk2OWE1
 
 ```json
 {
-    "Action": "SendBatchUSMSMessage",
-    "AccountId": 0
+   "Action": "SendBatchUSMSMessage",
+   "AccountId": 10001,
+   "TaskContent": [{
+      "TemplateId": "UTA2233108MUY3HZ",
+      "SenderId": "uSpeedo",
+      "Target": [{
+         "TemplateParams": ["123456", "653132", "nickname1"],
+         "Phone": "55212345780"
+      }, {
+         "TemplateParams": ["123457", "765421", "nickname2"],
+         "Phone": "55212345781"
+      }]
+   }]
 }
 ```
 
 **Step 3:** Combine the sorted parameters and their corresponding values into the format `parameter=parametervalue`. Append `AccessKeySecret` at the end of this signature string. The resulting string is the unsigned string.
 
 ```
-AccountId0ActionSendBatchUSMSMessageMjI3YmYyMjItNmM4Mi00ZGM5LWEwNDQtN2EzZjM0Yzk2OWE1
+AccountId10001ActionSendBatchUSMSMessageTaskContentSenderIduSpeedoTargetPhone55212345780TemplateParams123456653132nickname1Phone55212345781TemplateParams123457765421nickname2TemplateIdUTA2233108MUY3HZMjI3YmYyMjItNmM4Mi00ZGM5LWEwNDQtN2EzZjM0Yzk2OWE1
 ```
 
 **step 4: Calculate the Signature Value**
@@ -49,7 +60,7 @@ AccountId0ActionSendBatchUSMSMessageMjI3YmYyMjItNmM4Mi00ZGM5LWEwNDQtN2EzZjM0Yzk2
 Encode the unsigned string using SHA1 to generate the request signature.
 
 ```
-cf44481ba31ec8d2943d0699e9e38062de44a7da
+69cc15724cda05b63c99cebf8226202d4c69ef0f
 ```
 
 **Step 5: Set HTTP Headers**
