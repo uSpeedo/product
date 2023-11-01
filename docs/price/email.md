@@ -11,7 +11,7 @@ Discover the most suitable service plan for your business.
 ### **Pay as you go**
 - Grow your business with pay-per-use model which can put you in control of your spending.
 
-|  Pricing   | 0.0009USD/email       |
+|  Pricing   | 0.001USD/email       |
 | ------------- | ---------------- |
 
 * Please confirm the mail address you enter in is a valid address.
