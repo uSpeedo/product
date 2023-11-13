@@ -86,6 +86,12 @@ const config = {
           },
           { 
             type: 'docSidebar', 
+            sidebarId: 'aigc',
+            position: 'left',
+            label: 'AIGC',
+          },
+          { 
+            type: 'docSidebar', 
             sidebarId: 'legal',
             position: 'left',
             label: 'Legal',
