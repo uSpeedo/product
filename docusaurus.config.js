@@ -90,6 +90,12 @@ const config = {
             position: 'left',
             label: 'AIGC',
           },
+           { 
+            type: 'docSidebar', 
+            sidebarId: 'shortlink',
+            position: 'left',
+            label: 'Short Link',
+          },
           { 
             type: 'docSidebar', 
             sidebarId: 'legal',
