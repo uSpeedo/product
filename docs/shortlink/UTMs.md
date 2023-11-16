@@ -67,8 +67,8 @@ To test how your UTMs will appear at the end of your link, try [Google's Campaig
 
 Experimenting with the URL Builder can help you define a consistent UTM strategy without creating a bunch of links. The UTM strategy is vital to organizing your links and saving you from lots of frustration when you analyze your data.
 
-> Reminders for using UTMs
-
+> **Reminders for using UTMs**
+>
 > - Source, medium, and campaign are required for using UTMs. The other values help you get more specific about the traffic, but they are optional.
 > - Because UTM parameters are case sensitive, it is best practice is to use lowercase letters for all your UTM values.
 > - When using UTMs, add them to your long URL before you shorten it.
