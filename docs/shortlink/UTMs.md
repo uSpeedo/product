@@ -69,6 +69,6 @@ Experimenting with the URL Builder can help you define a consistent UTM strategy
 
 > Reminders for using UTMs
 
-- Source, medium, and campaign are required for using UTMs. The other values help you get more specific about the traffic, but they are optional.
-- Because UTM parameters are case sensitive, it is best practice is to use lowercase letters for all your UTM values.
-- When using UTMs with Bitly, add them to your long URL before you shorten it.
+> - Source, medium, and campaign are required for using UTMs. The other values help you get more specific about the traffic, but they are optional.
+> - Because UTM parameters are case sensitive, it is best practice is to use lowercase letters for all your UTM values.
+> - When using UTMs, add them to your long URL before you shorten it.
