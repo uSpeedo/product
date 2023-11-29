@@ -3,6 +3,7 @@ sidebar_label: 'How to create short link?'
 sidebar_position: 1
 ---
 
+# How to create short link?
 Short link is a convenient, concise, trackable, and manageable link tool that allows customization and management of links, making them easier to share and track.
 
 If you have a uSpeedo account, please follow these steps to create links:
