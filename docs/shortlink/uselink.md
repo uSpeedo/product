@@ -6,6 +6,13 @@ sidebar_position: 2
 # How do I use short links?
 You can add the short links to the template. This way, the short links will be included in the message every time you send the template, allowing recipients to click on the link for access.
 
+## Download QR code
+You can choose png, jpeg, svg format and set the desired size.This form is more suitable for offline scenarios.
+
+![image](https://github.com/uSpeedo/product/assets/116861648/5844323e-8d52-4d67-af80-71c72f2651f7)
+
+![image](https://github.com/uSpeedo/product/assets/116861648/edce1519-df5e-4756-aa68-99e639e76290)
+
 ## Add links to templates
 You can add the short link you want to send in the template.
 
@@ -18,6 +25,7 @@ Select from the dropdown menu the existing short links you have created.
 You can also copy the short link from the link list.
 
 ![image](https://github.com/uSpeedo/product/assets/116861648/a47d76d7-8dd5-4441-905e-7d398e1f4673)
+
 ![image](https://github.com/uSpeedo/product/assets/116861648/d7882cc8-448e-4343-a61c-c84ff019c883)
 
 > **Note**：Please avoid common prefixes and suffixes such as https/www./.com when inserting links.
