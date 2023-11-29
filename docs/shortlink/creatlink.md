@@ -24,7 +24,7 @@ If you have a uSpeedo account, please follow these steps to create links:
 6.Add tags to this link, such as **marketing** or **website**.
 ![image](https://github.com/uSpeedo/product/assets/116861648/85012e78-3025-4be5-8986-e0a943a7754f)
 
-7.All short links use the secure **HTTPS** protocol, ensuring safe access.
+7.All short links use the secure *HTTPS* protocol, ensuring safe access.
 
 
 
