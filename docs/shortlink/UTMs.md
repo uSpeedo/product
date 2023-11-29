@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'What are UTM parameters?'
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 UTM parameters are bits of information added at the end of a URL that can help you understand the visitors on your site. You've likely seen UTM parameters in your browser, like when you've clicked a link in a newsletter.
