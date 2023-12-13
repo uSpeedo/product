@@ -12,7 +12,7 @@ Get access to worldwide pricing tailored to your needs.
 - Grow your business with pay-per-use model which can put you in control of your spending.
 
 
-| Country/Region   | Price(USD)       |
+| Country / Region | Price(USD)       |
 |------------------|------------------|
 | Hong Kong        | 0.1125           | 
 | Taiwan           | 0.18             |
