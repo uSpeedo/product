@@ -1,5 +1,6 @@
 ---
 sidebar_label: 'WhatsApp'
+sidebar_position: 2
 ---
 # WhatsApp Business API Pricing
 
