@@ -1,5 +1,6 @@
 ---
 sidebar_label: 'MMS'
+sidebar_position: 4
 ---
 # MMS Pricing
 
