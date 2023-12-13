@@ -17,4 +17,4 @@ Discover the most suitable service plan for your business.
 
 * Please confirm the mail address you enter in is a valid address.
 
-Notes: If you have any questions or need further help, please don't hesitate to contact us: customersuccess@uspeedo.com
+> Notes: If you have any questions or need further help, please don't hesitate to contact us: **customersuccess@uspeedo.com**
