@@ -84,6 +84,12 @@ const config = {
             position: 'left',
             label: 'Email',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'mms',
+            position: 'left',
+            label: 'MMS',
+          },
           { 
             type: 'docSidebar', 
             sidebarId: 'aigc',
@@ -136,6 +142,10 @@ const config = {
               {
                 label: 'Email',
                 href: 'https://console.uspeedo.com/email/overview',
+              },
+              {
+                label: 'MMS',
+                href: 'https://console.uspeedo.com/mms/overview',
               },
             ],
           },
