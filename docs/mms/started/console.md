@@ -2,6 +2,9 @@
 sidebar_label: 'Use the MMS console'
 sidebar_position: 1
 ---
+
+# Use the MMS console
+
 ## Before you begin
 
 1. Create a uSpeedo account and complete upgrade.
