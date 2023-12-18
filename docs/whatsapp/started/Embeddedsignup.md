@@ -80,7 +80,7 @@ To create a new Facebook business account, follow these steps:
 7. Click OK.
 Your request is submitted to WhatsApp for review.
 
-When you complete the embedded signup, you can submit a request for Business Verification, which is an optional process. You can submit this request without waiting for WhatsApp approval to be complete. If you complete business verification, you can add additional senders and begin messaging immediately on these senders. You can have up to 250 conversations per day on each of these additional senders. After the display name review is complete, this limit automatically increases to 1,000 conversations.
+When you complete the embedded signup, you can submit a request for Business Verification, which is an optional process. You can submit this request without waiting for WhatsApp approval to be complete. If you complete business verification, you can add additional senders and begin messaging immediately on these senders. You can have up to 250 conversations per day on each of these additional senders. After the display name review is complete, this limit automatically increases to 1,000 conversations.Messaging limits determine the maximum number of business-initiated conversations you can initiate using each of your phone numbers in a rolling 24-hour period.[Learn more about Messaging Limits](https://developers.facebook.com/docs/whatsapp/messaging-limits)
 
 ## (Optional) Submit business verification
 To become either an approved sender or a verified sender, you must go through business verification. Skip this step if you want to become an approved sender with limited access or if your business has already been verified by WhatsApp.
